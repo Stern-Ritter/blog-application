@@ -1,7 +1,7 @@
 {
-  "name": "weather-report",
+  "name": "blog-application",
   "version": "1.0.0",
-  "description": "Weather report",
+  "description": "Blog application",
   "main": "index.js",
   "scripts": {
     "test": "jest",
