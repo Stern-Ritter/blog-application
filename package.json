@@ -13,14 +13,14 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/Stern-Ritter/Weather-project.git"
+    "url": "git+https://github.com/Stern-Ritter/blog-application.git"
   },
   "author": "Konstantin Fadeev",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/Stern-Ritter/Weather-project/issues"
+    "url": "https://github.com/Stern-Ritter/blog-application/issues"
   },
-  "homepage": "https://github.com/Stern-Ritter/Weather-project#readme",
+  "homepage": "https://github.com/Stern-Ritter/blog-applicationt#readme",
   "devDependencies": {
     "@babel/cli": "^7.16.0",
     "@babel/core": "^7.16.0",
