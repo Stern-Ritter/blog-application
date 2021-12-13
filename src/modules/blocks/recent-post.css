@@ -1,0 +1,10 @@
+.recent-post__list {
+  display: grid;
+  justify-content: center;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  gap: 24px;
+}
+.recent-post__list-item {
+  padding: 24px;
+  background-color: rgba(245, 245, 245, 0.5);
+} /*# sourceMappingURL=recent-post.css.map */
