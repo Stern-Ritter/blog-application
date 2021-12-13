@@ -1,4 +1,27 @@
 @import url("./vendor/sanitize.css");
 
-@import url("./modules/blocks/mixins.scss");
-@import url("./modules/blocks/variables.scss");
+@import url("./modules/mixins.scss");
+@import url("./modules//variables.scss");
+
+@import url("./modules/blocks/logo.scss");
+@import url("./modules/blocks/link.scss");
+@import url("./modules/blocks/list.scss");
+@import url("./modules/blocks/button.scss");
+
+@import url("./modules/blocks/post-preview.scss");
+@import url("./modules/blocks/search.scss");
+@import url("./modules/blocks/share.scss");
+@import url("./modules/blocks/post-details.scss");
+@import url("./modules/blocks/comment.scss");
+@import url("./modules/blocks/subscription.scss");
+
+@import url("./modules/blocks/page.scss");
+@import url("./modules/blocks/header.scss");
+@import url("./modules/blocks/content.scss");
+@import url("./modules/blocks/recent-post.scss");
+@import url("./modules/blocks/lates-post.scss");
+@import url("./modules/blocks/featured-post.scss");
+@import url("./modules/blocks/search-post.scss");
+@import url("./modules/blocks/post-details.scss");
+@import url("./modules/blocks/comments.scss");
+@import url("./modules/blocks/footer.scss");
