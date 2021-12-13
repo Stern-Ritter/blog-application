@@ -1,6 +1,8 @@
 .page {
   min-width: 320px;
-  background-color: red;
+  max-width: 1024px;
+  margin: 0 auto;
+  background-color: #FFFFFF;
   font-family: "Inter", "Arial", sans-serif;
   /* Сглаживание шрифта */
   -webkit-font-smoothing: antialiased;
@@ -9,4 +11,8 @@
   -webkit-text-size-adjust: 100%;
   -ms-text-size-adjust: 100%;
   -moz-text-size-adjust: 100%;
+
+  &__section {
+    padding: 0 19px;
+  }
 }

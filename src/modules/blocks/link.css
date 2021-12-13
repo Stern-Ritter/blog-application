@@ -1,8 +1,7 @@
 .link {
   transition: opacity 0.3s ease-in-out;
   text-decoration: none;
-
-  &:hover {
-    opacity: 0.8;
-  }
 }
+.link:hover {
+  opacity: 0.8;
+} /*# sourceMappingURL=link.css.map */

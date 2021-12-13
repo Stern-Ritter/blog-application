@@ -1,0 +1,27 @@
+.header {
+  min-height: 80px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.header__logo {
+  color: #272343;
+  font-size: 32px;
+  line-height: 1.31;
+}
+.header__list {
+  display: flex;
+}
+.header__list-item {
+  margin-right: 24px;
+}
+.header__list-item:last-of-type {
+  margin-right: 0;
+}
+.header__link {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 1.5;
+  color: #6d7280;
+} /*# sourceMappingURL=header.css.map */

@@ -1,15 +1,26 @@
 .subscription {
-
-
-  &__form {
-
-  }
-
   &__input {
-
+    min-width: 280px;
+    padding: 16px 20px;
+    margin-right: 8px;
+    background-color: rgba(255, 255, 255, 0.06);
+    border: none;
+    outline: none;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 1.25;
+    color: rgba(255, 255, 255, 0.6);
   }
 
   &__accept-btn {
-    
+    min-width: 120px;
+    padding: 13px 22px;
+    background-color: #FB743E;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.5;
+    color: #FFFFFF;
   }
 }

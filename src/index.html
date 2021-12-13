@@ -10,29 +10,27 @@
     <link rel="stylesheet" href="./style.css" />
   </head>
   <body class="page">
-    <header class="header">
-      <a href="#" class="logo link header__logo"
-        >Blog<span class="link__color-accent">y.</span></a
+    <header class="header page__section">
+      <a href="#" class="logo header__logo link"
+        >Blog<span class="logo__color-accent">y.</span></a
       >
-      <div class="header__holder">
-        <nav>
-          <ul class="list header__list">
-            <li class="header__list-item">
-              <a href="#" class="link header__link">Home</a>
-            </li>
-            <li class="header__list-item">
-              <a href="#" class="link header__link">All post</a>
-            </li>
-            <li class="header__list-item">
-              <a href="#" class="link header__link">Contact us</a>
-            </li>
-          </ul>
-        </nav>
-      </div>
+      <nav>
+        <ul class="header__list list">
+          <li class="header__list-item">
+            <a href="#" class="link header__link">Home</a>
+          </li>
+          <li class="header__list-item">
+            <a href="#" class="link header__link">All post</a>
+          </li>
+          <li class="header__list-item">
+            <a href="#" class="link header__link">Contact us</a>
+          </li>
+        </ul>
+      </nav>
     </header>
 
-    <main class="content">
-      <section class="content__section recent-post">
+    <main class="content page__section">
+      <section class="recent-post content__section">
         <h2 class="content__section-headline">Recent Post</h2>
         <ul class="recent-post__list">
           <li class="recent-post__list-item">
@@ -349,76 +347,93 @@
       </section>
     </main>
 
-    <footer class="footer">
-      <div class="footer__column">
-        <a href="#" class="logo link footer__logo"
-          >Blog<span class="link__color-accent">y.</span></a
+    <footer class="footer page__section">
+      <div class="footer__row footer__row_content_main-info">
+        <div class="footer__column footer__column_content_logo">
+          <a href="#" class="logo footer__logo link"
+            >Blog<span class="logo__color-accent">y.</span></a
+          >
+          <p class="footer__paragraph">
+            Phasellus porttitor sapien a purus venenatis condimentum. Nunc
+            lectus ipsum, laoreet ut efficitur.
+          </p>
+        </div>
+        <div class="footer__column footer__column_content_info">
+          <h4 class="footer__column-title">Category</h4>
+          <nav>
+            <ul class="list footer__column-links">
+              <li class="footer__column-link">
+                <a class="link footer__link" href="#" target="_blank">Travel</a>
+              </li>
+              <li class="footer__column-link">
+                <a class="link footer__link" href="#" target="_blank">Food</a>
+              </li>
+              <li class="footer__column-link">
+                <a class="link footer__link" href="#" target="_blank"
+                  >Lifestyle</a
+                >
+              </li>
+              <li class="footer__column-link">
+                <a class="link footer__link" href="#" target="_blank"
+                  >Fashion</a
+                >
+              </li>
+            </ul>
+          </nav>
+        </div>
+        <div class="footer__column footer__column_content_info">
+          <h4 class="footer__column-title">Follow us</h4>
+          <nav>
+            <ul class="list footer__column-links">
+              <li class="footer__column-link">
+                <a class="link footer__link" href="#" target="_blank"
+                  >Facebook</a
+                >
+              </li>
+              <li class="footer__column-link">
+                <a class="link footer__link" href="#" target="_blank"
+                  >Twitter</a
+                >
+              </li>
+              <li class="footer__column-link">
+                <a class="link footer__link" href="#" target="_blank"
+                  >Instagramm</a
+                >
+              </li>
+              <li class="footer__column-link">
+                <a class="link footer__link" href="#" target="_blank"
+                  >Youtube</a
+                >
+              </li>
+            </ul>
+          </nav>
+        </div>
+        <div
+          class="
+            footer__column footer__column_content_subscription
+            subscription
+          "
         >
-      </div>
-      <div class="footer__column footer__column_content_info">
-        <h4 class="footer__column-title">Category</h4>
-        <nav>
-          <ul class="list footer__column-links">
-            <li class="footer__column-link">
-              <a class="link footer__link" href="#" target="_blank">Travel</a>
-            </li>
-            <li class="footer__column-link">
-              <a class="link footer__link" href="#" target="_blank">Food</a>
-            </li>
-            <li class="footer__column-link">
-              <a class="link footer__link" href="#" target="_blank"
-                >Lifestyle</a
-              >
-            </li>
-            <li class="footer__column-link">
-              <a class="link footer__link" href="#" target="_blank">Fashion</a>
-            </li>
-          </ul>
-        </nav>
-      </div>
-      <div class="footer__column footer__column_content_info">
-        <h4 class="footer__column-title">Follow us</h4>
-        <nav>
-          <ul class="list footer__column-links">
-            <li class="footer__column-link">
-              <a class="link footer__link" href="#" target="_blank">Facebook</a>
-            </li>
-            <li class="footer__column-link">
-              <a class="link footer__link" href="#" target="_blank">Twitter</a>
-            </li>
-            <li class="footer__column-link">
-              <a class="link footer__link" href="#" target="_blank"
-                >Instagramm</a
-              >
-            </li>
-            <li class="footer__column-link">
-              <a class="link footer__link" href="#" target="_blank">Youtube</a>
-            </li>
-          </ul>
-        </nav>
-      </div>
-      <div
-        class="footer__column footer__column_content_subscription subscription"
-      >
-        <h4 class="footer__column-title">Newsletter</h4>
-        <form
-          name="user-subscription-form"
-          action="#"
-          autocomplete="off"
-          class="subscription__form"
-        >
-          <input
-            class="subscription__input"
-            type="email"
-            name="user-email"
-            placeholder="Enter Email"
-          />
-          <input
-            class="subscription__accept-btn"
-            type="submit"
-            value="Subscribe"
-          />
-        </form>
+          <h4 class="footer__column-title">Newsletter</h4>
+          <form
+            class="subscription__form"
+            name="user-subscription-form"
+            action="#"
+            autocomplete="off"
+          >
+            <input
+              class="subscription__input"
+              type="email"
+              name="user-email"
+              placeholder="Enter Email"
+            />
+            <input
+              class="subscription__accept-btn"
+              type="submit"
+              value="Subscribe"
+            />
+          </form>
+        </div>
       </div>
       <p class="footer__row footer__row_content_copyright">
         &copy;&nbsp; Blogy 2021
