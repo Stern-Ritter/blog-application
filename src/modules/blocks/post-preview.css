@@ -1,15 +1,22 @@
 .post-preview_place_recent-post {
   padding: 24px;
-  max-width: 424px;
+  width: 100%;
   box-sizing: border-box;
   background-color: rgba(245, 245, 245, 0.5);
 }
 .post-preview_place_lates-post {
   padding: 20px;
-  max-width: 404px;
+  width: 95%;
   box-sizing: border-box;
+  transform: translateY(-44px);
   background-color: #ffffff;
-  z-index: 1;
+}
+.post-preview_place_featured-post {
+  padding: 32px;
+  width: 85%;
+  box-sizing: border-box;
+  transform: translateY(-70px);
+  background-color: #f7f7f7;
 }
 .post-preview__category {
   padding: 0 32px;
