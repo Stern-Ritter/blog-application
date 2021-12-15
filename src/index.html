@@ -347,94 +347,99 @@
                 </ul>
               </div>
             </div>
+            <h3 class="post-details__form-headline">Leave a Comment</h3>
+            <form
+              name="add-comment-form"
+              action="#"
+              autocomplete="off"
+              class="post-details__form"
+            >
+              <input
+                class="post-details__input post-details__input_type_name"
+                name="user-name"
+                placeholder="Your name"
+                type="text"
+                required
+                minlength="2"
+                maxlength="30"
+              />
+              <input
+                class="post-details__input post-details__input_type_email"
+                name="user-email"
+                placeholder="Your email"
+                type="email"
+                required
+                minlength="2"
+                maxlength="30"
+              />
+              <textarea
+                class="post-details__input post-details__input_type_text"
+                name="comment"
+                placeholder="Your Comments"
+                rows="10"
+                minlength="2"
+                maxlength="300"
+                required
+              ></textarea>
+              <input
+                class="post-details__accept-btn"
+                type="submit"
+                value="Post Comment"
+              />
+            </form>
+
+            <div class="comments">
+              <p class="comments__title">
+                Comments <span class="comments__count">(02)</span>
+              </p>
+              <ul class="comments__list">
+                <li class="comments__list-item">
+                  <article class="comment">
+                    <div class="comment__author">
+                      <span class="comment__author-avatar"></span>
+                      <p class="comment__author-about">
+                        <span class="comment__author-name">Kevin</span>
+                        <span class="comment__publication_date"
+                          >2 hours ago</span
+                        >
+                      </p>
+                    </div>
+                    <p class="comment__text">
+                      Donec pellentesque luctus tortor finibus blandit. Fusce
+                      tincidunt lectus augue, quis commodo justo tincidunt eget.
+                      Praesent at elit diam.
+                    </p>
+                    <button class="button comment__replay-btn"></button>
+                  </article>
+                </li>
+                <li class="comments__list-item">
+                  <article class="comment">
+                    <div class="comment__author">
+                      <span class="comment__author-avatar"></span>
+                      <p class="comment__author-about">
+                        <span class="comment__author-name">Marry</span>
+                        <span class="comment__publication_date"
+                          >2 hours ago</span
+                        >
+                      </p>
+                    </div>
+                    <p class="comment__text">
+                      Nulla varius enim eu dui venenatis, nec lacinia urna
+                      gravida. Vivamus euismod tincidunt eros at bibendum. Proin
+                      lacus dolor, posuere et posuere eu, congue posuere lectus.
+                      Suspendisse id lorem egestas, volutpat lacus a, auctor
+                      justo. Cras ac elementum arcu, eget ornare massa. Donec
+                      eget urna magna. Fusce vestibulum arcu eu libero
+                      ullamcorper, nec semper dolor bibendum. Mauris laoreet
+                      justo massa, vitae venenatis augue dignissim ac.
+                    </p>
+                    <button class="button post__replay-btn"></button>
+                  </article>
+                </li>
+              </ul>
+            </div>
           </div>
         </article>
-        <form
-          name="add-comment-form"
-          action="#"
-          autocomplete="off"
-          class="post-details__form"
-        >
-          <input
-            class="post-details__input"
-            name="user-name"
-            placeholder="Your name"
-            type="text"
-            required
-            minlength="2"
-            maxlength="30"
-          />
-          <input
-            class="post-details__input"
-            name="user-email"
-            placeholder="Your email"
-            type="email"
-            required
-            minlength="2"
-            maxlength="30"
-          />
-          <textarea
-            class="post-details__input"
-            name="comment"
-            placeholder="Your Comments"
-            rows="5"
-            minlength="2"
-            maxlength="300"
-            required
-          >
-          </textarea>
-          <input
-            class="post-details__accept-btn"
-            type="submit"
-            value="Post Comment"
-          />
-        </form>
-        <div class="comments">
-          <p class="comments__title">
-            Comments <span class="comments__count">(02)</span>
-          </p>
-          <ul class="comments__list">
-            <li class="comments__list-item">
-              <article class="comment">
-                <div class="comment__author">
-                  <span class="comment__author-avatar"></span>
-                  <p class="comment__author-about">
-                    <span class="comment__author-name">Kevin</span>
-                    <span class="comment__publication_date">2 hours ago</span>
-                  </p>
-                </div>
-                <p class="comment__text">
-                  Donec pellentesque luctus tortor finibus blandit. Fusce
-                  tincidunt lectus augue, quis commodo justo tincidunt eget.
-                  Praesent at elit diam.
-                </p>
-                <button class="button comment__replay-btn"></button>
-              </article>
-            </li>
-            <li class="comments__list-item">
-              <article class="comment">
-                <div class="comment__author">
-                  <span class="comment__author-avatar"></span>
-                  <p class="comment__author-about">
-                    <span class="comment__author-name">Marry</span>
-                    <span class="comment__publication_date">2 hours ago</span>
-                  </p>
-                </div>
-                <p class="comment__text">
-                  Nulla varius enim eu dui venenatis, nec lacinia urna gravida.
-                  Vivamus euismod tincidunt eros at bibendum. Proin lacus dolor,
-                  posuere et posuere eu, congue posuere lectus. Suspendisse id
-                  lorem egestas, volutpat lacus a, auctor justo. Cras ac
-                  elementum arcu, eget ornare massa. Donec eget urna magna.
-                  Fusce vestibulum arcu eu libero ullamcorper, nec semper dolor
-                  bibendum. Mauris laoreet justo massa, vitae venenatis augue
-                  dignissim ac.
-                </p>
-                <button class="button post__replay-btn"></button>
-              </article>
-            </li>
-          </ul>
-        </div>
       </section>
     </main>
 
