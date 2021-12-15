@@ -1,18 +1,23 @@
 .comments {
-
   &__title {
-
+    margin: 0 0 8px 0;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 32px;
+    line-height: 1;
+    color: #272343;
   }
 
   &__count {
-
-  }
-
-  &__list {
-
+    font-weight: normal;
+    color: #6D7280;
   }
 
   &__list-item {
-    
+    border-bottom: 1px solid #6D7280;
+  }
+
+  &__list-item:last-of-type {
+    border: none;
   }
 }

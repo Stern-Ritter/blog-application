@@ -29,6 +29,7 @@
   max-width: 200px;
 }
 .footer__row {
+  margin: 0;
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;

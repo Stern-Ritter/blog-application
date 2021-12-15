@@ -1,30 +1,66 @@
 .comment {
+  padding-top: 24px;
+  padding-bottom: 24px;
 
   &__author {
-
+    display: flex;
+    align-items: center;
+    margin-bottom: 12px;
   }
 
   &__author-avatar {
-
+    width: 40px;
+    height: 40px;
+    margin-right: 12px;
+    border-radius: 50%;
+    object-fit: cover;
+    object-position: center;
   }
 
-  &__author-about{
+  &__author-about {
+    margin: 0;
+  }
 
+  &__author-about-item {
+    display: block;
+    margin-bottom: 8px;
+    font-style: normal;
+    font-size: 16px;
+    line-height: 1;
+    font-size: 15px;
+    line-height: 1;
+  }
+
+  &__author-about-item:last-of-type {
+    margin-bottom: 0;
   }
 
   &__author-name {
-
+    font-weight: 500;
+    color: #272343;
   }
 
   &__publication_date {
-
+    font-weight: normal;
+    color: #6d7280;
   }
 
   &__text {
-
+    margin: 0;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 17px;
+    line-height: 1.5;
+    color: #6d7280;
   }
 
   &__replay-btn {
-    
+    padding: 12px 0;
+    border: none;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 15px;
+    line-height: 1;
+    color: #494B5C;
   }
 }
