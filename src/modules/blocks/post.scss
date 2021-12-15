@@ -1,51 +1,145 @@
 .post {
-
+  padding-top: 100px;
+  padding-bottom: 100px;
+  max-width: 1096px;
+  width: 90%;
+  display: flex;
+  justify-content: space-between;
 
   &__social-info {
-
+    width: 14%;
   }
 
-  &__likes-count {
-
+  &__social-info-element {
+    display: block;
+    padding-left: 28px;
+    margin-bottom: 34px;
+    position: relative;
   }
 
-  &__comments-count {
+  &__social-info-element::before {
+    position: absolute;
+    content: "";
+    top: 0;
+    left: 0;
+    width: 18px;
+    height: 18px;
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+  }
 
+  &__likes-count::before {
+    background-image: url("./images/like-icon.svg");
+  }
+
+  &__comments-count::before {
+    background-image: url("./images/comment-icon.svg");
+  }
+
+  &__main-content {
+    width: 82%;
   }
 
   &__title {
-
+    margin: 0 0 16px 0;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 40px;
+    line-height: 1;
+    color: #272343;
   }
 
   &__subtitle {
-
-  }
-
-  &__section-title {
-
-  }
-
-  &__section-subtitle {
-
+    margin: 0 0 24px 0;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 1.5;
+    color: #494b5c;
   }
 
   &__quote {
+    padding-left: 24px;
+    margin: 0 0 60px 0;
+    border-left: 3px solid #fb743e;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 22px;
+    line-height: 1.5;
+    color: #494b5c;
+  }
 
+  &__section {
+    padding-bottom: 50px;
+  }
+
+  &__section-title {
+    margin: 0 0 32px 0;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 28px;
+    line-height: 1.5;
+  }
+
+  &__section-subtitle {
+    margin: 0 0 8px 0;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 24px;
+    line-height: 1.5;
   }
 
   &__illustration {
-
+    width: 100%;
+    max-height: 400px;
+    margin-bottom: 32px;
+    object-fit: contain;
+    object-position: left top;
+    box-shadow: -6px 0px 6px -5px rgba(34, 60, 80, 0.6);
   }
 
   &__paragraph {
-
+    margin: 0 0 20px 0;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 1.5;
+    color: #494b5c;
   }
 
   &__social-panel {
-
+    display: flex;
+    justify-content: space-between;
+    padding: 40px 87px;
+    border-style: solid;
+    border-width: 1px 0;
+    border-color: #6d7280;
   }
 
   &__like-btn {
-    
+    min-width: 330px;
+    padding: 16px 132px 16px 164px;
+    border: none;
+    background-color: #fb743e;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.25;
+    color: #ffffff;
+    position: relative;
+  }
+
+  &__like-btn::before {
+    position: absolute;
+    content: "";
+    top: 16px;
+    left: 136px;
+    width: 18px;
+    height: 18px;
+    background-image: url("./images/like-icon-white.svg");
+    background-size: contain;
+    background-position: right center;
+    background-repeat: no-repeat;
   }
 }

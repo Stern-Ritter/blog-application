@@ -1,0 +1,20 @@
+.search-post__list {
+  padding-top: 100px;
+  padding-bottom: 100px;
+  display: grid;
+  justify-content: center;
+  grid-template-columns: repeat(auto-fit, minmax(-webkit-min-content, 648px));
+  grid-template-columns: repeat(auto-fit, minmax(min-content, 648px));
+  gap: 24px;
+}
+.search-post__list-item {
+  min-height: 688px;
+}
+.search-post__image {
+  width: 100%;
+  height: 508px;
+  -o-object-fit: cover;
+  object-fit: cover;
+  -o-object-position: center;
+  object-position: center;
+} /*# sourceMappingURL=search-post.css.map */

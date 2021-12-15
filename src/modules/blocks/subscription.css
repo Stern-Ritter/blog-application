@@ -14,6 +14,7 @@
 .subscription__accept-btn {
   min-width: 120px;
   padding: 13px 22px;
+  border: none;
   background-color: #fb743e;
   font-style: normal;
   font-weight: 500;

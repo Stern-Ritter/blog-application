@@ -1,9 +1,21 @@
 .search-post {
-
   &__list {
+    padding-top: 100px;
+    padding-bottom: 100px;
+    display: grid;
+    justify-content: center;
+    grid-template-columns: repeat(auto-fit, minmax(min-content, 648px));
+    gap: 24px;
   }
 
   &__list-item {
-    
+    min-height: 688px;
+  }
+
+  &__image {
+    width: 100%;
+    height: 508px;
+    object-fit: cover;
+    object-position: center;
   }
 }
