@@ -17,6 +17,21 @@
   line-height: 1.1;
   color: #272343;
 }
+.search__form {
+  position: relative;
+}
+.search__form::before {
+  position: absolute;
+  content: "";
+  top: 22px;
+  left: 30px;
+  width: 22px;
+  height: 22px;
+  background-image: url("./images/search.svg");
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+}
 .search__input {
   min-width: 751px;
   padding: 25px 10px 25px 68px;
@@ -33,11 +48,4 @@
 .search__accept-btn {
   min-width: 137px;
   padding: 25px 40px;
-  border: none;
-  background-color: #fb743e;
-  font-style: normal;
-  font-weight: 500;
-  font-size: 16px;
-  line-height: 1;
-  color: #ffffff;
 } /*# sourceMappingURL=search.css.map */

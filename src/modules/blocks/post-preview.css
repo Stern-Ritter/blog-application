@@ -103,24 +103,12 @@
   display: inline-block;
   padding-right: 32px;
   margin-top: 20px;
-  font-style: normal;
-  font-weight: 500;
-  font-size: 16px;
-  line-height: 1.5;
-  color: #272343;
-  position: relative;
 }
 .post-preview__learn-more-btn::after {
-  position: absolute;
-  content: "";
   top: 7px;
   right: 4px;
   width: 16px;
   height: 9px;
-  background-image: url(./images/arrow-btn.svg);
-  background-size: contain;
-  background-position: right center;
-  background-repeat: no-repeat;
 }
 .post-preview__avatar {
   width: 40px;

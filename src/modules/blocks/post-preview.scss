@@ -1,3 +1,5 @@
+@use "sass:map";
+
 .post-preview {
   &_place {
     &_recent-post{
@@ -44,7 +46,7 @@
     padding: 0 32px;
     margin: 0 0 10px 0;
     font-style: normal;
-    font-weight: normal;
+    font-weight: map.get($font-weights, "regular");
     font-size: 16px;
     line-height: 1.5;
     color: #272343;
@@ -56,15 +58,14 @@
     content: "";
     top: 11px;
     left: 0;
-    width: 24px;
-    height: 2px;
+    @include wh($w: 24px, $h: 2px);
     background-color: #fb743e;
   }
 
   &__title {
     margin: 0;
     font-style: normal;
-    font-weight: bold;
+    font-weight: map.get($font-weights, "bold");
     line-height: 1.2;
     color: #272343;
 
@@ -82,17 +83,14 @@
   }
 
   &__holder {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+    @include flex($direction: row, $align: center, $justify: space-between);
   }
 
   &__info {
     margin: 0;
-    display: flex;
-    align-items: center;
+    @include flex($direction: row, $align: center);
     font-style: normal;
-    font-weight: normal;
+    font-weight: map.get($font-weights, "regular");
     font-size: 16px;
     line-height: 1.5;
     color: #6d7280;
@@ -109,8 +107,7 @@
     content: "";
     top: 9px;
     right: 8px;
-    width: 5px;
-    height: 5px;
+    @include wh($w: 5px, $h: 5px);
     border-radius: 50%;
     background-color: #6d7280;
   }
@@ -123,30 +120,16 @@
     display: inline-block;
     padding-right: 32px;
     margin-top: 20px;
-    font-style: normal;
-    font-weight: 500;
-    font-size: 16px;
-    line-height: 1.5;
-    color: #272343;
-    position: relative;
   }
 
   &__learn-more-btn::after {
-    position: absolute;
-    content: "";
     top: 7px;
     right: 4px;
-    width: 16px;
-    height: 9px;
-    background-image: url(./images/arrow-btn.svg);
-    background-size: contain;
-    background-position: right center;
-    background-repeat: no-repeat;
+    @include wh($w: 16px, $h: 9px);
   }
 
   &__avatar {
-    width: 40px;
-    height: 40px;
+    @include wh($w: 40px, $h: 40px);
     margin-right: 12px;
     border-radius: 50%;
     object-fit: cover;

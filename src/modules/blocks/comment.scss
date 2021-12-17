@@ -1,16 +1,16 @@
+@use "sass:map";
+
 .comment {
   padding-top: 24px;
   padding-bottom: 24px;
 
   &__author {
-    display: flex;
-    align-items: center;
+    @include flex($direction: row, $align: center);
     margin-bottom: 12px;
   }
 
   &__author-avatar {
-    width: 40px;
-    height: 40px;
+    @include wh($w: 40px, $h: 40px);
     margin-right: 12px;
     border-radius: 50%;
     object-fit: cover;
@@ -36,19 +36,19 @@
   }
 
   &__author-name {
-    font-weight: 500;
+    font-weight: map.get($font-weights, "medium");
     color: #272343;
   }
 
-  &__publication_date {
-    font-weight: normal;
+  &__publication-date {
+    font-weight: map.get($font-weights, "regular");
     color: #6d7280;
   }
 
   &__text {
     margin: 0;
     font-style: normal;
-    font-weight: normal;
+    font-weight: map.get($font-weights, "regular");
     font-size: 17px;
     line-height: 1.5;
     color: #6d7280;
@@ -58,7 +58,7 @@
     padding: 12px 0;
     border: none;
     font-style: normal;
-    font-weight: 500;
+    font-weight: map.get($font-weights, "medium");
     font-size: 15px;
     line-height: 1;
     color: #494B5C;

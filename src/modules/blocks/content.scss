@@ -1,3 +1,5 @@
+@use "sass:map";
+
 .content {
 
   &__section {
@@ -9,7 +11,7 @@
     padding: 0 0 50px 0;
     margin: 0;
     font-style: normal;
-    font-weight: bold;
+    font-weight: map.get($font-weights, "bold");
     font-size: 42px;
     line-height: 1.33;
     color: #272343;
@@ -21,8 +23,7 @@
     content: "";
     bottom: 40px;
     left: 0;
-    width: 112px;
-    height: 4px;
+    @include wh($w: 112px, $h: 4px);
     background-color: #FB743E;
   }
 }

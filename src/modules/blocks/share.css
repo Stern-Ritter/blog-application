@@ -34,4 +34,7 @@
 }
 .share__link_target_pinterest {
   background-image: url("./images/pinterest.svg");
+}
+.share__link_target_copy {
+  background-image: url("./images/copy-link.svg");
 } /*# sourceMappingURL=share.css.map */

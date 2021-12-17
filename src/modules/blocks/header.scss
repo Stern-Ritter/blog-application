@@ -1,8 +1,15 @@
+@use "sass:map";
+
 .header {
+  position: sticky;
+  top: 0;
+  left: 0;
+  right: 0;
   min-height: 80px;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
+  background-color: #FFFFFF;
+  opacity: 0.95;
+  z-index: 100;
+  @include flex($direction: row, $align: center, $justify: space-between);
 
   &__logo {
     color: #272343;
@@ -11,7 +18,7 @@
   }
 
   &__list {
-    display: flex;
+    @include flex($direction: row);
   }
 
   &__list-item {
@@ -24,7 +31,7 @@
 
   &__link {
     font-style: normal;
-    font-weight: normal;
+    font-weight: map.get($font-weights, "regular");
     font-size: 16px;
     line-height: 1.5;
     color: #6D7280;

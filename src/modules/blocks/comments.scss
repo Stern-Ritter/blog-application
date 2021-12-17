@@ -1,15 +1,17 @@
+@use "sass:map";
+
 .comments {
   &__title {
     margin: 0 0 8px 0;
     font-style: normal;
-    font-weight: bold;
+    font-weight: map.get($font-weights, "bold");
     font-size: 32px;
     line-height: 1;
     color: #272343;
   }
 
   &__count {
-    font-weight: normal;
+    font-weight: map.get($font-weights, "regular");
     color: #6D7280;
   }
 

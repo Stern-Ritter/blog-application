@@ -9,6 +9,7 @@
     <title>Blog</title>
     <link rel="stylesheet" href="./style.css" />
   </head>
+
   <body class="page">
     <header class="header page__section">
       <a href="#" class="logo header__logo link"
@@ -17,13 +18,13 @@
       <nav>
         <ul class="header__list list">
           <li class="header__list-item">
-            <a href="#" class="link header__link">Home</a>
+            <a href="#" class="header__link link">Home</a>
           </li>
           <li class="header__list-item">
-            <a href="#" class="link header__link">All post</a>
+            <a href="#" class="header__link link">All post</a>
           </li>
           <li class="header__list-item">
-            <a href="#" class="link header__link">Contact us</a>
+            <a href="#" class="header__link link">Contact us</a>
           </li>
         </ul>
       </nav>
@@ -49,7 +50,7 @@
                 >
               </div>
               <a
-                class="link post-preview__learn-more-btn"
+                class="post-preview__learn-more-btn link link_type_learn-more"
                 href="#"
                 target="_blank"
                 >Read Article
@@ -83,7 +84,7 @@
                 >
               </div>
               <a
-                class="link post-preview__learn-more-btn"
+                class="post-preview__learn-more-btn link link_type_learn-more"
                 href="#"
                 target="_blank"
                 >Read Article
@@ -117,7 +118,7 @@
                 >
               </div>
               <a
-                class="link post-preview__learn-more-btn"
+                class="post-preview__learn-more-btn link link_type_learn-more"
                 href="#"
                 target="_blank"
                 >Read Article
@@ -145,7 +146,12 @@
               name="text"
               maxlength="40"
             />
-            <input class="search__accept-btn" type="submit" value="Search" />
+            <button
+              class="search__accept-btn button button_type_accept"
+              type="submit"
+            >
+              Search
+            </button>
           </form>
         </div>
         <ul class="search-post__list list">
@@ -170,7 +176,7 @@
                 >
               </div>
               <a
-                class="link post-preview__learn-more-btn"
+                class="post-preview__learn-more-btn link link_type_learn-more"
                 href="#"
                 target="_blank"
                 >Read Article
@@ -208,17 +214,22 @@
               <ul class="share__links list">
                 <li class="share__links-item">
                   <a
-                    class="share__link share__link_target_facebook"
+                    class="share__link share__link_target_facebook link"
                     href="#"
                     target="_blank"
                   ></a>
                   <a
-                    class="share__link share__link_target_twitter"
+                    class="share__link share__link_target_twitter link"
                     href="#"
                     target="_blank"
                   ></a>
                   <a
-                    class="share__link share__link_target_pinterest"
+                    class="share__link share__link_target_pinterest link"
+                    href="#"
+                    target="_blank"
+                  ></a>
+                  <a
+                    class="share__link share__link_target_copy link"
                     href="#"
                     target="_blank"
                   ></a>
@@ -323,23 +334,33 @@
               </p>
             </div>
             <div class="post__social-panel">
-              <button class="button post__like-btn">Like</button>
+              <button
+                class="post__like-btn button button_type_accept"
+                type="button"
+              >
+                Like
+              </button>
               <div class="share">
                 <p class="share__description">Share the Post:</p>
                 <ul class="share__links list">
                   <li class="share__links-item">
                     <a
-                      class="share__link share__link_target_facebook"
+                      class="share__link share__link_target_facebook link"
                       href="#"
                       target="_blank"
                     ></a>
                     <a
-                      class="share__link share__link_target_twitter"
+                      class="share__link share__link_target_twitter link"
                       href="#"
                       target="_blank"
                     ></a>
                     <a
-                      class="share__link share__link_target_pinterest"
+                      class="share__link share__link_target_pinterest link"
+                      href="#"
+                      target="_blank"
+                    ></a>
+                    <a
+                      class="share__link share__link_target_copy link"
                       href="#"
                       target="_blank"
                     ></a>
@@ -381,11 +402,12 @@
                 maxlength="300"
                 required
               ></textarea>
-              <input
-                class="post-details__accept-btn"
+              <button
+                class="post-details__accept-btn button button_type_accept"
                 type="submit"
-                value="Post Comment"
-              />
+              >
+                Post Comment
+              </button>
             </form>
 
             <div class="comments">
@@ -410,7 +432,7 @@
                         >
                         <span
                           class="
-                            comment__author-about-item comment__publication_date
+                            comment__author-about-item comment__publication-date
                           "
                           >2 hours ago</span
                         >
@@ -421,7 +443,9 @@
                       tincidunt lectus augue, quis commodo justo tincidunt eget.
                       Praesent at elit diam.
                     </p>
-                    <button class="button comment__replay-btn">Replay</button>
+                    <button class="comment__replay-btn button" type="button">
+                      Replay
+                    </button>
                   </article>
                 </li>
                 <li class="comments__list-item">
@@ -441,7 +465,7 @@
                         >
                         <span
                           class="
-                            comment__author-about-item comment__publication_date
+                            comment__author-about-item comment__publication-date
                           "
                           >2 hours ago</span
                         >
@@ -457,7 +481,7 @@
                       ullamcorper, nec semper dolor bibendum. Mauris laoreet
                       justo massa, vitae venenatis augue dignissim ac.
                     </p>
-                    <button class="button comment__replay-btn">Replay</button>
+                    <button class="comment__replay-btn button">Replay</button>
                   </article>
                 </li>
               </ul>
@@ -483,18 +507,18 @@
           <nav>
             <ul class="list footer__column-links">
               <li class="footer__column-link">
-                <a class="link footer__link" href="#" target="_blank">Travel</a>
+                <a class="footer__link link" href="#" target="_blank">Travel</a>
               </li>
               <li class="footer__column-link">
-                <a class="link footer__link" href="#" target="_blank">Food</a>
+                <a class="footer__link link" href="#" target="_blank">Food</a>
               </li>
               <li class="footer__column-link">
-                <a class="link footer__link" href="#" target="_blank"
+                <a class="footer__link link" href="#" target="_blank"
                   >Lifestyle</a
                 >
               </li>
               <li class="footer__column-link">
-                <a class="link footer__link" href="#" target="_blank"
+                <a class="footer__link link" href="#" target="_blank"
                   >Fashion</a
                 >
               </li>
@@ -506,22 +530,22 @@
           <nav>
             <ul class="list footer__column-links">
               <li class="footer__column-link">
-                <a class="link footer__link" href="#" target="_blank"
+                <a class="footer__link link" href="#" target="_blank"
                   >Facebook</a
                 >
               </li>
               <li class="footer__column-link">
-                <a class="link footer__link" href="#" target="_blank"
+                <a class="footer__link link" href="#" target="_blank"
                   >Twitter</a
                 >
               </li>
               <li class="footer__column-link">
-                <a class="link footer__link" href="#" target="_blank"
+                <a class="footer__link link" href="#" target="_blank"
                   >Instagramm</a
                 >
               </li>
               <li class="footer__column-link">
-                <a class="link footer__link" href="#" target="_blank"
+                <a class="footer__link link" href="#" target="_blank"
                   >Youtube</a
                 >
               </li>
@@ -547,11 +571,12 @@
               name="user-email"
               placeholder="Enter Email"
             />
-            <input
-              class="subscription__accept-btn"
+            <button
+              class="subscription__accept-btn button button_type_accept"
               type="submit"
-              value="Subscribe"
-            />
+            >
+              Subscribe
+            </button>
           </form>
         </div>
       </div>

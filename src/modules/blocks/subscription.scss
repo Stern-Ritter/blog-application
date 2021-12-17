@@ -1,3 +1,5 @@
+@use "sass:map";
+
 .subscription {
   &__input {
     min-width: 280px;
@@ -7,7 +9,7 @@
     border: none;
     outline: none;
     font-style: normal;
-    font-weight: normal;
+    font-weight: map.get($font-weights, "regular");
     font-size: 16px;
     line-height: 1.25;
     color: rgba(255, 255, 255, 0.6);
@@ -16,12 +18,5 @@
   &__accept-btn {
     min-width: 120px;
     padding: 13px 22px;
-    border: none;
-    background-color: #FB743E;
-    font-style: normal;
-    font-weight: 500;
-    font-size: 16px;
-    line-height: 1.5;
-    color: #FFFFFF;
   }
 }

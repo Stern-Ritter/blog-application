@@ -107,16 +107,9 @@
 .post__like-btn {
   min-width: 330px;
   padding: 16px 132px 16px 164px;
-  border: none;
-  background-color: #fb743e;
-  font-style: normal;
-  font-weight: 500;
-  font-size: 16px;
-  line-height: 1.25;
-  color: #ffffff;
   position: relative;
 }
-.post__like-btn::before {
+.post__like-btn::after {
   position: absolute;
   content: "";
   top: 16px;
