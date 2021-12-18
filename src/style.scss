@@ -1,29 +1,29 @@
 @import url("./vendor/sanitize.css");
 @import url("./vendor/fonts/fonts.css");
 
-@import "./modules/mixins.scss";
-@import "./modules/variables.scss";
+@import "./modules/_mixins.scss";
+@import "./modules/_variables.scss";
 
-@import "./modules/blocks/link.scss";
-@import "./modules/blocks/list.scss";
-@import "./modules/blocks/button.scss";
+@import "./modules/blocks/_link.scss";
+@import "./modules/blocks/_list.scss";
+@import "./modules/blocks/_button.scss";
 
-@import "./modules/blocks/logo.scss";
-@import "./modules/blocks/post-preview.scss";
-@import "./modules/blocks/search.scss";
-@import "./modules/blocks/share.scss";
-@import "./modules/blocks/post.scss";
-@import "./modules/blocks/comment.scss";
-@import "./modules/blocks/subscription.scss";
+@import "./modules/blocks/_logo.scss";
+@import "./modules/blocks/_post-preview.scss";
+@import "./modules/blocks/_search.scss";
+@import "./modules/blocks/_share.scss";
+@import "./modules/blocks/_post.scss";
+@import "./modules/blocks/_comment.scss";
+@import "./modules/blocks/_subscription.scss";
 
-@import "./modules/blocks/page.scss";
+@import "./modules/blocks/_page.scss";
 
-@import "./modules/blocks/header.scss";
-@import "./modules/blocks/content.scss";
-@import "./modules/blocks/recent-post.scss";
-@import "./modules/blocks/lates-post.scss";
-@import "./modules/blocks/featured-post.scss";
-@import "./modules/blocks/search-post.scss";
-@import "./modules/blocks/post-details.scss";
-@import "./modules/blocks/comments.scss";
-@import "./modules/blocks/footer.scss";
+@import "./modules/blocks/_header.scss";
+@import "./modules/blocks/_content.scss";
+@import "./modules/blocks/_recent-post.scss";
+@import "./modules/blocks/_lates-post.scss";
+@import "./modules/blocks/_featured-post.scss";
+@import "./modules/blocks/_search-post.scss";
+@import "./modules/blocks/_post-details.scss";
+@import "./modules/blocks/_comments.scss";
+@import "./modules/blocks/_footer.scss";
