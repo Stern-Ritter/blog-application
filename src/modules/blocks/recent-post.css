@@ -1,7 +1,0 @@
-.recent-post__list {
-  display: grid;
-  justify-content: center;
-  grid-template-columns: repeat(auto-fit, minmax(-webkit-min-content, 424px));
-  grid-template-columns: repeat(auto-fit, minmax(min-content, 424px));
-  gap: 24px;
-} /*# sourceMappingURL=recent-post.css.map */
