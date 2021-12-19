@@ -11,7 +11,7 @@
       background-color: #fb743e;
       font-style: normal;
       font-weight: map.get($font-weights, "medium");
-      font-size: 16px;
+      font-size: 1rem;
       line-height: 1.25;
       color: #ffffff;
       overflow: hidden;
@@ -27,8 +27,8 @@
       background-image: linear-gradient(#FF4500, #FF4500);
       background-repeat: no-repeat;
       background-size: 0% 100%;
-      z-index: -1;
       transition: background-size 0.5s linear;
+      z-index: -1;
     }
 
     &_accept:hover::before {

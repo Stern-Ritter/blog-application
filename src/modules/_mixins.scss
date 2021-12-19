@@ -11,19 +11,19 @@
 }
 
 @mixin tabletStyles {
-  @media (min-width: 768px) {
+  @media (max-width: 768px) {
     @content;
   }
 }
 
 @mixin desctopStyles {
-  @media (min-width: 1200px) {
+  @media (max-width: 1200px) {
     @content;
   }
 }
 
 @mixin wideScreensStyles {
-  @media (min-width: 1440px) {
+  @media (max-width: 1440px) {
     @content;
   }
 }

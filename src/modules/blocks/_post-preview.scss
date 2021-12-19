@@ -47,10 +47,13 @@
     margin: 0 0 10px 0;
     font-style: normal;
     font-weight: map.get($font-weights, "regular");
-    font-size: 16px;
+    font-size: 1rem;
     line-height: 1.5;
     color: #272343;
     position: relative;
+
+    @include tabletStyles {
+    }
   }
 
   &__category::before {
@@ -72,12 +75,12 @@
     &_size {
       &_small {
         margin-bottom: 10px;
-        font-size: 28px;
+        font-size: 1.75rem;
       }
 
       &_medium {
         margin-bottom: 20px;
-        font-size: 64px;
+        font-size: 4rem;
       }
     }
   }
@@ -91,7 +94,7 @@
     @include flex($direction: row, $align: center);
     font-style: normal;
     font-weight: map.get($font-weights, "regular");
-    font-size: 16px;
+    font-size: 1rem;
     line-height: 1.5;
     color: #6d7280;
   }

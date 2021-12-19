@@ -25,9 +25,7 @@
     display: block;
     margin-bottom: 8px;
     font-style: normal;
-    font-size: 16px;
-    line-height: 1;
-    font-size: 15px;
+    font-size: 1rem;
     line-height: 1;
   }
 
@@ -49,7 +47,7 @@
     margin: 0;
     font-style: normal;
     font-weight: map.get($font-weights, "regular");
-    font-size: 17px;
+    font-size: 1rem;
     line-height: 1.5;
     color: #6d7280;
   }
@@ -59,7 +57,7 @@
     border: none;
     font-style: normal;
     font-weight: map.get($font-weights, "medium");
-    font-size: 15px;
+    font-size: 1rem;
     line-height: 1;
     color: #494B5C;
   }

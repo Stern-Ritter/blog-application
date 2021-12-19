@@ -11,7 +11,7 @@
 .link_type_learn-more {
   font-style: normal;
   font-weight: 500;
-  font-size: 16px;
+  font-size: 1rem;
   line-height: 1.5;
   color: #272343;
   position: relative;
@@ -47,7 +47,7 @@
   background-color: #fb743e;
   font-style: normal;
   font-weight: 500;
-  font-size: 16px;
+  font-size: 1rem;
   line-height: 1.25;
   color: #ffffff;
   overflow: hidden;
@@ -63,8 +63,8 @@
   background-image: linear-gradient(#ff4500, #ff4500);
   background-repeat: no-repeat;
   background-size: 0% 100%;
-  z-index: -1;
   transition: background-size 0.5s linear;
+  z-index: -1;
 }
 .button_type_accept:hover::before {
   background-size: 100% 100%;
@@ -118,7 +118,7 @@
   margin: 0 0 10px 0;
   font-style: normal;
   font-weight: 400;
-  font-size: 16px;
+  font-size: 1rem;
   line-height: 1.5;
   color: #272343;
   position: relative;
@@ -141,11 +141,11 @@
 }
 .post-preview__title_size_small {
   margin-bottom: 10px;
-  font-size: 28px;
+  font-size: 1.75rem;
 }
 .post-preview__title_size_medium {
   margin-bottom: 20px;
-  font-size: 64px;
+  font-size: 4rem;
 }
 .post-preview__holder {
   display: flex;
@@ -161,7 +161,7 @@
   justify-content: flex-start;
   font-style: normal;
   font-weight: 400;
-  font-size: 16px;
+  font-size: 1rem;
   line-height: 1.5;
   color: #6d7280;
 }
@@ -223,7 +223,7 @@
   margin: 0 0 30px 0;
   font-style: normal;
   font-weight: 700;
-  font-size: 40px;
+  font-size: 2.5rem;
   line-height: 1.1;
   color: #272343;
 }
@@ -251,7 +251,7 @@
   outline: none;
   font-style: normal;
   font-weight: 400;
-  font-size: 16px;
+  font-size: 1rem;
   line-height: 1;
   color: #6d7280;
 }
@@ -270,7 +270,7 @@
   margin: 0 12px 0 0;
   font-style: normal;
   font-weight: 400;
-  font-size: 16px;
+  font-size: 1rem;
   line-height: 1.25;
   color: #272343;
 }
@@ -346,7 +346,7 @@
   margin: 0 0 16px 0;
   font-style: normal;
   font-weight: 700;
-  font-size: 40px;
+  font-size: 2.5rem;
   line-height: 1;
   color: #272343;
 }
@@ -354,7 +354,7 @@
   margin: 0 0 24px 0;
   font-style: normal;
   font-weight: 400;
-  font-size: 18px;
+  font-size: 1.12rem;
   line-height: 1.5;
   color: #494b5c;
 }
@@ -364,7 +364,7 @@
   border-left: 3px solid #fb743e;
   font-style: normal;
   font-weight: 400;
-  font-size: 22px;
+  font-size: 1.37rem;
   line-height: 1.5;
   color: #494b5c;
 }
@@ -375,14 +375,14 @@
   margin: 0 0 32px 0;
   font-style: normal;
   font-weight: 700;
-  font-size: 28px;
+  font-size: 1.75rem;
   line-height: 1.5;
 }
 .post__section-subtitle {
   margin: 0 0 8px 0;
   font-style: normal;
   font-weight: 400;
-  font-size: 24px;
+  font-size: 1.5rem;
   line-height: 1.5;
 }
 .post__illustration {
@@ -399,7 +399,7 @@
   margin: 0 0 20px 0;
   font-style: normal;
   font-weight: 400;
-  font-size: 18px;
+  font-size: 1.12rem;
   line-height: 1.5;
   color: #494b5c;
 }
@@ -459,9 +459,7 @@
   display: block;
   margin-bottom: 8px;
   font-style: normal;
-  font-size: 16px;
-  line-height: 1;
-  font-size: 15px;
+  font-size: 1rem;
   line-height: 1;
 }
 .comment__author-about-item:last-of-type {
@@ -479,7 +477,7 @@
   margin: 0;
   font-style: normal;
   font-weight: 400;
-  font-size: 17px;
+  font-size: 1rem;
   line-height: 1.5;
   color: #6d7280;
 }
@@ -488,7 +486,7 @@
   border: none;
   font-style: normal;
   font-weight: 500;
-  font-size: 15px;
+  font-size: 1rem;
   line-height: 1;
   color: #494b5c;
 }
@@ -502,7 +500,7 @@
   outline: none;
   font-style: normal;
   font-weight: 400;
-  font-size: 16px;
+  font-size: 1rem;
   line-height: 1.25;
   color: rgba(255, 255, 255, 0.6);
 }
@@ -546,7 +544,7 @@
 }
 .header__logo {
   color: #272343;
-  font-size: 32px;
+  font-size: 2rem;
   line-height: 1.31;
 }
 .header__list {
@@ -564,7 +562,7 @@
 .header__link {
   font-style: normal;
   font-weight: 400;
-  font-size: 16px;
+  font-size: 1rem;
   line-height: 1.5;
   color: #6d7280;
 }
@@ -578,7 +576,7 @@
   margin: 0;
   font-style: normal;
   font-weight: 700;
-  font-size: 42px;
+  font-size: 2.5rem;
   line-height: 1.33;
   color: #272343;
   position: relative;
@@ -674,7 +672,7 @@
   margin: 0;
   font-style: normal;
   font-weight: 700;
-  font-size: 32px;
+  font-size: 2rem;
   line-height: 1;
   color: #272343;
 }
@@ -694,7 +692,7 @@
   font-family: inherit;
   font-style: normal;
   font-weight: 400;
-  font-size: 16px;
+  font-size: 1rem;
   line-height: 1.25;
   color: #6d7280;
 }
@@ -718,7 +716,7 @@
   margin: 0 0 8px 0;
   font-style: normal;
   font-weight: 700;
-  font-size: 32px;
+  font-size: 2rem;
   line-height: 1;
   color: #272343;
 }
@@ -741,7 +739,7 @@
 .footer__logo {
   margin-bottom: 16px;
   color: #ffffff;
-  font-size: 40px;
+  font-size: 2.5rem;
   line-height: 1.31;
 }
 .footer__paragraph {
@@ -749,14 +747,14 @@
   margin: 0;
   font-style: normal;
   font-weight: 400;
-  font-size: 16px;
+  font-size: 1rem;
   line-height: 1.5;
   color: rgba(255, 255, 255, 0.6);
 }
 .footer__link {
   font-style: normal;
   font-weight: 400;
-  font-size: 16px;
+  font-size: 1rem;
   line-height: 1.5;
   color: rgba(255, 255, 255, 0.6);
 }
@@ -779,7 +777,7 @@
   border-top: 1px solid rgba(255, 255, 255, 0.2);
   font-style: normal;
   font-weight: 400;
-  font-size: 16px;
+  font-size: 1rem;
   line-height: 1.5;
   color: rgba(255, 255, 255, 0.6);
 }
@@ -787,7 +785,7 @@
   margin: 0 0 24px 0;
   font-style: normal;
   font-weight: 400;
-  font-size: 24px;
+  font-size: 1.5rem;
   line-height: 1.33;
   color: #ffffff;
 }
