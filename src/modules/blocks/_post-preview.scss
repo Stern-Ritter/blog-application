@@ -3,65 +3,70 @@
 .post-preview {
   &_place {
     &_recent-post{
-      padding: 24px;
+      padding: 1.5rem;
       width: 100%;
       box-sizing: border-box;
       background-color: rgba(245, 245, 245, 0.5);
     }
 
     &_lates-post{
-      padding: 20px;
+      padding: 1.25rem;
       width: 95%;
       box-sizing: border-box;
-      transform: translateY(-44px);
+      transform: translateY(-2rem);
       background-color: #FFFFFF;
     }
 
     &_featured-post {
-      padding: 32px;
+      padding: 2rem;
       width: 85%;
       box-sizing: border-box;
-      transform: translateY(-70px);
+      transform: translateY(-4rem);
       background-color: #F7F7F7;
+
+      @include tabletStyles {
+        width: 95%;
+      }
     }
 
     &_search-post {
-      padding: 32px;
+      padding: 2rem;
       width: 85%;
       box-sizing: border-box;
-      transform: translateY(-70px);
+      transform: translateY(-4rem);
       background-color: #F7F7F7;
+
+      @include tabletStyles {
+        width: 95%;
+      }
     }
 
     &_post-details {
-      padding: 40px;
+      padding: 2.5rem;
       width: 90%;
       max-width: 1096px;
       box-sizing: border-box;
-      box-shadow: 4px 4px 8px 0px rgba(34, 60, 80, 0.2);
+      box-shadow: 0.25rem 0.25rem 0.5rem 0 rgba(34, 60, 80, 0.2);
     }
   }
 
   &__category {
-    padding: 0 32px;
-    margin: 0 0 10px 0;
+    padding: 0 2rem;
+    margin: 0 0 0.625rem 0;
     font-style: normal;
     font-weight: map.get($font-weights, "regular");
     font-size: 1rem;
     line-height: 1.5;
     color: #272343;
     position: relative;
-
-    @include tabletStyles {
-    }
   }
 
   &__category::before {
     position: absolute;
     content: "";
-    top: 11px;
+    top: 0.685rem;
     left: 0;
-    @include wh($w: 24px, $h: 2px);
+    @include wh($w: 1.5rem, $h: 0.125rem);
     background-color: #fb743e;
   }
 
@@ -74,19 +79,49 @@
 
     &_size {
       &_small {
-        margin-bottom: 10px;
+        margin-bottom: 0.625rem;
         font-size: 1.75rem;
       }
 
       &_medium {
-        margin-bottom: 20px;
+        margin-bottom: 1.25rem;
         font-size: 4rem;
+
+        @include tabletStyles {
+          font-size: 2rem;
+        }
       }
     }
   }
 
   &__holder {
-    @include flex($direction: row, $align: center, $justify: space-between);
+    @include flex($direction: row, $align: center);
+
+    @include tabletStyles {
+      @include flex($direction: column, $align: center, $justify: center);
+    }
+  }
+
+  &__avatar-holder {
+    @include flex($direction: row, $align: center);
+    margin-right: 1rem;
+
+    @include tabletStyles {
+      margin-bottom: 1rem;
+      margin-right: 0;
+    }
+  }
+
+  &__avatar-subline {
+    display: inline-block;
+  }
+
+  &__avatar {
+    @include wh($w: 2.5rem, $h: 2.5rem);
+    margin-right: 0.75rem;
+    border-radius: 50%;
+    object-fit: cover;
+    object-position: center;
   }
 
   &__info {
@@ -97,20 +132,24 @@
     font-size: 1rem;
     line-height: 1.5;
     color: #6d7280;
+
+    @include tabletStyles {
+      margin-bottom: 1rem;
+    }
   }
 
   &__info-element {
     display: inline-block;
-    padding-right: 21px;
+    padding-right: 1.5rem;
     position: relative;
   }
 
   &__info-element::after {
     position: absolute;
     content: "";
-    top: 9px;
-    right: 8px;
-    @include wh($w: 5px, $h: 5px);
+    top: 0.5rem;
+    right: 0.5rem;
+    @include wh($w: 0.375rem, $h: 0.375rem);
     border-radius: 50%;
     background-color: #6d7280;
   }
@@ -121,22 +160,14 @@
 
   &__learn-more-btn {
     display: inline-block;
-    padding-right: 32px;
-    margin-top: 20px;
+    padding-right: 2rem;
+    margin-top: 1.25rem;
   }
 
   &__learn-more-btn::after {
-    top: 7px;
-    right: 4px;
-    @include wh($w: 16px, $h: 9px);
-  }
-
-  &__avatar {
-    @include wh($w: 40px, $h: 40px);
-    margin-right: 12px;
-    border-radius: 50%;
-    object-fit: cover;
-    object-position: center;
+    top: 0.5rem;
+    right: 0.25rem;
+    @include wh($w: 1rem, $h: 0.5rem);
   }
 
   &__user-name {

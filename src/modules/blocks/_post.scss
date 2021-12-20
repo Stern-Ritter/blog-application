@@ -3,12 +3,33 @@
 .post {
   padding-top: 100px;
   padding-bottom: 100px;
-  max-width: 1096px;
   width: 90%;
-  @include flex($direction: row, $justify: space-between);
+  max-width: 1096px;
+  display: grid;
+  grid-template-columns: 20% 75%;
+  grid-template-areas:
+      "info title"
+      "info subtitle"
+      "info main";
+  column-gap: 50px;
+
+  @include tabletStyles {
+    padding-top: 60px;
+    padding-bottom: 60px;
+    grid-template-areas:
+      "title"
+      "subtitle"
+      "info"
+      "main";
+    grid-template-columns: 1fr;
+  }
 
   &__social-info {
-    width: 14%;
+    grid-area: info;
+
+    @include tabletStyles {
+      @include flex($direction: row);
+    }
   }
 
   &__social-info-element {
@@ -16,6 +37,11 @@
     padding-left: 28px;
     margin-bottom: 34px;
     position: relative;
+
+    @include tabletStyles {
+      margin-bottom: 16px;
+      margin-right: 16px;
+    }
   }
 
   &__social-info-element::before {
@@ -38,7 +64,7 @@
   }
 
   &__main-content {
-    width: 82%;
+    grid-area: main;
   }
 
   &__title {
@@ -48,6 +74,7 @@
     font-size: 2.5rem;
     line-height: 1;
     color: #272343;
+    grid-area: title;
   }
 
   &__subtitle {
@@ -57,6 +84,7 @@
     font-size: 1.12rem;
     line-height: 1.5;
     color: #494b5c;
+    grid-area: subtitle;
   }
 
   &__quote {
@@ -110,24 +138,32 @@
 
   &__social-panel {
     @include flex($direction: row, $justify: space-between);
-    padding: 40px 87px;
+    padding: 5% 10%;
     border-style: solid;
     border-width: 1px 0;
     border-color: #6d7280;
+
+    @include tabletStyles {
+      @include flex($direction: column, $align: center);
+    }
   }
 
   &__like-btn {
-    min-width: 330px;
-    padding: 16px 132px 16px 164px;
+    min-width: 20%;
+    padding: 1rem 20% 1rem 25%;
     position: relative;
+
+    @include desctopStyles {
+      margin-bottom: 1rem;
+    }
   }
 
   &__like-btn::after {
     position: absolute;
     content: "";
-    top: 16px;
-    left: 136px;
-    @include wh($w: 18px, $h: 18px);
+    top: calc(50% - 0.5rem);
+    left: 30%;
+    @include wh($w: 1rem, $h: 1rem);
     background-image: url("./images/like-icon-white.svg");
     background-size: contain;
     background-position: right center;

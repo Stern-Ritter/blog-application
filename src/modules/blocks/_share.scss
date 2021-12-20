@@ -3,6 +3,10 @@
 .share {
   @include flex($direction: row, $align: center);
 
+  @include desctopStyles {
+    @include flex($direction: column, $align: center);
+  }
+
   &__description {
     margin: 0 12px 0 0;
     font-style: normal;
@@ -10,6 +14,10 @@
     font-size: 1rem;
     line-height: 1.25;
     color: #272343;
+    
+    @include desctopStyles {
+      margin-bottom: 1rem;
+    }
   }
 
   &__links-item {

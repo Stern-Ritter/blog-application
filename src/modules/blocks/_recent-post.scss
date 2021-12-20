@@ -1,5 +1,7 @@
 .recent-post {
   &__list {
+    padding-left: 5px;
+    padding-right: 5px;
     display: grid;
     justify-content: center;
     grid-template-columns: repeat(auto-fit, minmax(min-content, 424px));

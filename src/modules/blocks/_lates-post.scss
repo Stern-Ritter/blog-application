@@ -2,6 +2,8 @@
   background-color: #F5F5F5;
 
   &__list {
+    padding-left: 5px;
+    padding-right: 5px;
     display: grid;
     justify-content: center;
     grid-template-columns: repeat(auto-fit, minmax(min-content, 424px));
@@ -10,12 +12,19 @@
 
   &__list-item {
     min-height: 512px;
+
+    @include tabletStyles {
+      min-height: 344px;
+    }
   }
 
   &__image {
-    width: 100%;
-    height: 332px;
+    @include wh($w: 100%, $h: 332px);
     object-fit: cover;
     object-position: center;
+
+    @include tabletStyles {
+      height: 280px;
+    }
   }
 }

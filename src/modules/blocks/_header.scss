@@ -1,6 +1,7 @@
 @use "sass:map";
 
 .header {
+  @include flex($direction: row, $align: center, $justify: space-between);
   position: sticky;
   top: 0;
   left: 0;
@@ -9,12 +10,11 @@
   background-color: #FFFFFF;
   opacity: 0.95;
   z-index: 100;
-  @include flex($direction: row, $align: center, $justify: space-between);
 
   &__logo {
-    color: #272343;
     font-size: 2rem;
     line-height: 1.31;
+    color: #272343;
   }
 
   &__list {
@@ -22,7 +22,7 @@
   }
 
   &__list-item {
-    margin-right: 24px;
+    margin-right: 1.5rem;
   }
 
   &__list-item:last-of-type {

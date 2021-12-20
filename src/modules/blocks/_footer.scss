@@ -5,6 +5,11 @@
   padding-bottom: 20px;
   background-color: #272343;
 
+  @include tabletStyles {
+    padding-top: 40px;
+    padding-bottom: 40px;
+  }
+
   &__logo {
     margin-bottom: 16px;
     color: #ffffff;
@@ -31,11 +36,17 @@
   }
 
   &__column {
+    margin-right: 16px;
+    margin-bottom: 32px;
     &_content {
       &_logo {
         max-width: 200px;
       }
     }
+  }
+
+  &__column:last-of-type {
+    margin-right: 0;
   }
 
   &__row {
@@ -46,7 +57,12 @@
     &_content {
       &_main-info {
         padding-bottom: 70px;
+
+        @include tabletStyles {
+          padding-bottom: 30px;
+        }
       }
+      
       &_copyright {
         padding-top: 20px;
         border-top: 1px solid rgba(255, 255, 255, 0.2);

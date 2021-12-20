@@ -11,11 +11,16 @@
     font-size: 2rem;
     line-height: 1;
     color: #272343;
+
+    @include tabletStyles {
+      padding-top: 60px;
+    }
   }
 
   &__form {
     padding-top: 24px;
     padding-bottom: 70px;
+    width: 100%;
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-template-areas:
@@ -23,6 +28,16 @@
       "text text"
       ". button";
     gap: 24px;
+
+    @include tabletStyles {
+      grid-template-areas:
+      "name"
+      "email"
+      "text"
+      "button";
+      grid-template-columns: 1fr;
+      gap: 16px;
+    }
   }
 
   &__input {
@@ -55,5 +70,9 @@
     justify-self: end;
     min-width: 189px;
     padding: 12px 29px;
+
+    @include tabletStyles {
+      justify-self: center;
+    }
   }
 }
