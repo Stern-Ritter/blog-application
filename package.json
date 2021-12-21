@@ -55,6 +55,7 @@
     "style-loader": "^3.3.1",
     "stylelint": "^14.2.0",
     "stylelint-config-standard": "^24.0.0",
+    "stylelint-scss": "^4.1.0",
     "webpack": "^5.64.1",
     "webpack-cli": "^4.9.1",
     "webpack-dev-server": "^4.5.0"
@@ -63,8 +64,5 @@
     "*.js": "eslint --cache --fix",
     "*.{js,css,md,yml}": "prettier --write",
     "*.scss": "stylelint --fix"
-  },
-  "dependencies": {
-    "stylelint-scss": "^4.1.0"
   }
 }
