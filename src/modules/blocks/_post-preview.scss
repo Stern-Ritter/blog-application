@@ -2,19 +2,19 @@
 
 .post-preview {
   &_place {
-    &_recent-post{
+    &_recent-post {
       padding: 1.5rem;
       width: 100%;
       box-sizing: border-box;
-      background-color: rgba(245, 245, 245, 0.5);
+      background-color: rgba(245, 245, 245, 50%);
     }
 
-    &_lates-post{
+    &_lates-post {
       padding: 1.25rem;
       width: 95%;
       box-sizing: border-box;
       transform: translateY(-2rem);
-      background-color: #FFFFFF;
+      background-color: #fff;
     }
 
     &_featured-post {
@@ -22,7 +22,7 @@
       width: 85%;
       box-sizing: border-box;
       transform: translateY(-4rem);
-      background-color: #F7F7F7;
+      background-color: #f7f7f7;
 
       @include tabletStyles {
         width: 95%;
@@ -34,7 +34,7 @@
       width: 85%;
       box-sizing: border-box;
       transform: translateY(-4rem);
-      background-color: #F7F7F7;
+      background-color: #f7f7f7;
 
       @include tabletStyles {
         width: 95%;
@@ -46,13 +46,13 @@
       width: 90%;
       max-width: 1096px;
       box-sizing: border-box;
-      box-shadow: 0.25rem 0.25rem 0.5rem 0 rgba(34, 60, 80, 0.2);
+      box-shadow: 0.25rem 0.25rem 0.5rem 0 rgba(34, 60, 80, 20%);
     }
   }
 
   &__category {
     padding: 0 2rem;
-    margin: 0 0 0.625rem 0;
+    margin: 0 0 0.625rem;
     font-style: normal;
     font-weight: map.get($font-weights, "regular");
     font-size: 1rem;
@@ -62,11 +62,12 @@
   }
 
   &__category::before {
+    @include wh($w: 1.5rem, $h: 0.125rem);
+
     position: absolute;
     content: "";
     top: 0.685rem;
     left: 0;
-    @include wh($w: 1.5rem, $h: 0.125rem);
     background-color: #fb743e;
   }
 
@@ -104,6 +105,7 @@
 
   &__avatar-holder {
     @include flex($direction: row, $align: center);
+
     margin-right: 1rem;
 
     @include tabletStyles {
@@ -118,6 +120,7 @@
 
   &__avatar {
     @include wh($w: 2.5rem, $h: 2.5rem);
+
     margin-right: 0.75rem;
     border-radius: 50%;
     object-fit: cover;
@@ -125,8 +128,9 @@
   }
 
   &__info {
-    margin: 0;
     @include flex($direction: row, $align: center);
+
+    margin: 0;
     font-style: normal;
     font-weight: map.get($font-weights, "regular");
     font-size: 1rem;
@@ -145,11 +149,12 @@
   }
 
   &__info-element::after {
+    @include wh($w: 0.375rem, $h: 0.375rem);
+
     position: absolute;
     content: "";
     top: 0.5rem;
     right: 0.5rem;
-    @include wh($w: 0.375rem, $h: 0.375rem);
     border-radius: 50%;
     background-color: #6d7280;
   }
@@ -165,9 +170,10 @@
   }
 
   &__learn-more-btn::after {
+    @include wh($w: 1rem, $h: 0.5rem);
+
     top: 0.5rem;
     right: 0.25rem;
-    @include wh($w: 1rem, $h: 0.5rem);
   }
 
   &__user-name {

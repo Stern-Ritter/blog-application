@@ -13,18 +13,19 @@
       font-weight: map.get($font-weights, "medium");
       font-size: 1rem;
       line-height: 1.25;
-      color: #ffffff;
+      color: #fff;
       overflow: hidden;
       z-index: 1;
     }
 
     &_accept::before {
-      content: "";
       @include wh($w: 100%, $h: 100%);
+
+      content: "";
       position: absolute;
-      top: 0px;
-      left: 0px;
-      background-image: linear-gradient(#FF4500, #FF4500);
+      top: 0;
+      left: 0;
+      background-image: linear-gradient(#ff4500, #ff4500);
       background-repeat: no-repeat;
       background-size: 0% 100%;
       transition: background-size 0.5s linear;

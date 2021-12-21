@@ -1,5 +1,5 @@
 .latest-post {
-  background-color: #F5F5F5;
+  background-color: #f5f5f5;
 
   &__list {
     padding-left: 5px;
@@ -20,6 +20,7 @@
 
   &__image {
     @include wh($w: 100%, $h: 332px);
+
     object-fit: cover;
     object-position: center;
 

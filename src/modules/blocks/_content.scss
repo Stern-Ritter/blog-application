@@ -1,7 +1,6 @@
 @use "sass:map";
 
 .content {
-
   &__section {
     padding-top: 100px;
     padding-bottom: 100px;
@@ -13,7 +12,7 @@
   }
 
   &__section-headline {
-    padding: 0 0 50px 0;
+    padding: 0 0 50px;
     margin: 0;
     font-style: normal;
     font-weight: map.get($font-weights, "bold");
@@ -28,12 +27,13 @@
   }
 
   &__section-headline::after {
+    @include wh($w: 112px, $h: 4px);
+
     position: absolute;
     content: "";
     bottom: 30px;
     left: 0;
-    @include wh($w: 112px, $h: 4px);
-    background-color: #FB743E;
+    background-color: #fb743e;
 
     @include tabletStyles {
       @include wh($w: 76px, $h: 3px);

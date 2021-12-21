@@ -12,7 +12,7 @@
 
   &__logo {
     margin-bottom: 16px;
-    color: #ffffff;
+    color: #fff;
     font-size: 2.5rem;
     line-height: 1.31;
   }
@@ -24,7 +24,7 @@
     font-weight: map.get($font-weights, "regular");
     font-size: 1rem;
     line-height: 1.5;
-    color: rgba(255, 255, 255, 0.6);
+    color: rgba(255, 255, 255, 60%);
   }
 
   &__link {
@@ -32,12 +32,13 @@
     font-weight: map.get($font-weights, "regular");
     font-size: 1rem;
     line-height: 1.5;
-    color: rgba(255, 255, 255, 0.6);
+    color: rgba(255, 255, 255, 60%);
   }
 
   &__column {
     margin-right: 16px;
     margin-bottom: 32px;
+
     &_content {
       &_logo {
         max-width: 200px;
@@ -50,8 +51,9 @@
   }
 
   &__row {
-    margin: 0;
     @include flex($direction: row, $justify: space-between);
+
+    margin: 0;
     flex-wrap: wrap;
 
     &_content {
@@ -62,26 +64,26 @@
           padding-bottom: 30px;
         }
       }
-      
+
       &_copyright {
         padding-top: 20px;
-        border-top: 1px solid rgba(255, 255, 255, 0.2);
+        border-top: 1px solid rgba(255, 255, 255, 20%);
         font-style: normal;
         font-weight: map.get($font-weights, "regular");
         font-size: 1rem;
         line-height: 1.5;
-        color: rgba(255, 255, 255, 0.6);
+        color: rgba(255, 255, 255, 60%);
       }
     }
   }
 
   &__column-title {
-    margin: 0 0 24px 0;
+    margin: 0 0 24px;
     font-style: normal;
     font-weight: map.get($font-weights, "regular");
     font-size: 1.5rem;
     line-height: 1.33;
-    color: #ffffff;
+    color: #fff;
   }
 
   &__column-links {

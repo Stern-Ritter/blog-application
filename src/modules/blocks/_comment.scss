@@ -6,11 +6,13 @@
 
   &__author {
     @include flex($direction: row, $align: center);
+
     margin-bottom: 12px;
   }
 
   &__author-avatar {
     @include wh($w: 40px, $h: 40px);
+
     margin-right: 12px;
     border-radius: 50%;
     object-fit: cover;
@@ -59,6 +61,6 @@
     font-weight: map.get($font-weights, "medium");
     font-size: 1rem;
     line-height: 1;
-    color: #494B5C;
+    color: #494b5c;
   }
 }

@@ -31,10 +31,10 @@
 
     @include tabletStyles {
       grid-template-areas:
-      "name"
-      "email"
-      "text"
-      "button";
+        "name"
+        "email"
+        "text"
+        "button";
       grid-template-columns: 1fr;
       gap: 16px;
     }
@@ -50,15 +50,17 @@
     font-weight: map.get($font-weights, "regular");
     font-size: 1rem;
     line-height: 1.25;
-    color: #6D7280;
+    color: #6d7280;
 
     &_type {
       &_name {
         grid-area: name;
       }
+
       &_email {
         grid-area: email;
       }
+
       &_text {
         grid-area: text;
       }

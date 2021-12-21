@@ -2,7 +2,7 @@
 
 .comments {
   &__title {
-    margin: 0 0 8px 0;
+    margin: 0 0 8px;
     font-style: normal;
     font-weight: map.get($font-weights, "bold");
     font-size: 2rem;
@@ -12,11 +12,11 @@
 
   &__count {
     font-weight: map.get($font-weights, "regular");
-    color: #6D7280;
+    color: #6d7280;
   }
 
   &__list-item {
-    border-bottom: 1px solid #6D7280;
+    border-bottom: 1px solid #6d7280;
   }
 
   &__list-item:last-of-type {

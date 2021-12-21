@@ -1,10 +1,11 @@
 @use "sass:map";
 
 .search {
+  @include flex($direction: column, $align: center, $justify: center);
+
   padding-top: 150px;
   padding-bottom: 100px;
   box-sizing: border-box;
-  @include flex($direction: column, $align: center, $justify: center);
   background-color: #f5f5f5;
 
   @include tabletStyles {
@@ -13,7 +14,7 @@
   }
 
   &__request {
-    margin: 0 0 2rem 0;
+    margin: 0 0 2rem;
     font-style: normal;
     font-weight: map.get($font-weights, "bold");
     font-size: 2.5rem;
@@ -23,8 +24,9 @@
   }
 
   &__form {
-    width: 100%;
     @include flex($direction: row, $align: center, $justify: center);
+
+    width: 100%;
 
     @include tabletStyles {
       @include flex($direction: column, $align: center);
@@ -39,12 +41,13 @@
   }
 
   &__field-set::before {
+    @include wh($w: 1.5rem, $h: 1.5rem);
+
     position: absolute;
     content: "";
     top: 1.5rem;
     left: 2rem;
-    @include wh($w: 1.5rem, $h: 1.5rem);
-    background-image: url('./images/search.svg');
+    background-image: url("./images/search.svg");
     background-size: contain;
     background-position: center;
     background-repeat: no-repeat;
@@ -55,7 +58,7 @@
     min-width: 280px;
     padding: 1.5rem 0.6rem 1.5rem 4.25rem;
     margin-right: 8px;
-    background-color: #ffffff;
+    background-color: #fff;
     border: none;
     outline: none;
     font-style: normal;

@@ -22,6 +22,7 @@
 
   &__image {
     @include wh($w: 100%, $h: 508px);
+
     object-fit: cover;
     object-position: center;
 

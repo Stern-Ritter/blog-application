@@ -2,12 +2,13 @@
 
 .header {
   @include flex($direction: row, $align: center, $justify: space-between);
+
   position: sticky;
   top: 0;
   left: 0;
   right: 0;
   min-height: 80px;
-  background-color: #FFFFFF;
+  background-color: #fff;
   opacity: 0.95;
   z-index: 100;
 
@@ -34,6 +35,6 @@
     font-weight: map.get($font-weights, "regular");
     font-size: 1rem;
     line-height: 1.5;
-    color: #6D7280;
+    color: #6d7280;
   }
 }

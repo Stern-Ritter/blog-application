@@ -11,7 +11,7 @@
   &_type {
     &_learn-more {
       font-style: normal;
-      font-weight: map.get($font-weights, "medium");;
+      font-weight: map.get($font-weights, "medium");
       font-size: 1rem;
       line-height: 1.5;
       color: #272343;
@@ -24,15 +24,15 @@
       background-size: contain;
       background-position: right center;
       background-repeat: no-repeat;
-      background-image: url(./images/arrow-btn.svg);
+      background-image: url("./images/arrow-btn.svg");
     }
 
     &_learn-more:hover {
-      color: #FB743E;
+      color: #fb743e;
     }
 
     &_learn-more:hover::after {
-      background-image: url(./images/arrow-btn-hover.svg);
+      background-image: url("./images/arrow-btn-hover.svg");
     }
   }
 }

@@ -1,17 +1,12 @@
 @import url("./vendor/sanitize.css");
 @import url("./vendor/html5doctor.css");
-
 @import url("./vendor/fonts/fonts.css");
-
 @import "./modules/_mixins.scss";
 @import "./modules/_variables.scss";
-
 @import "./modules/_html.scss";
-
 @import "./modules/blocks/_link.scss";
 @import "./modules/blocks/_list.scss";
 @import "./modules/blocks/_button.scss";
-
 @import "./modules/blocks/_logo.scss";
 @import "./modules/blocks/_post-preview.scss";
 @import "./modules/blocks/_search.scss";
@@ -19,9 +14,7 @@
 @import "./modules/blocks/_post.scss";
 @import "./modules/blocks/_comment.scss";
 @import "./modules/blocks/_subscription.scss";
-
 @import "./modules/blocks/_page.scss";
-
 @import "./modules/blocks/_header.scss";
 @import "./modules/blocks/_content.scss";
 @import "./modules/blocks/_recent-post.scss";

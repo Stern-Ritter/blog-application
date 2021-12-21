@@ -14,7 +14,7 @@
     font-size: 1rem;
     line-height: 1.25;
     color: #272343;
-    
+
     @include desctopStyles {
       margin-bottom: 1rem;
     }
@@ -29,8 +29,9 @@
   }
 
   &__link {
-    display: inline-block;
     @include wh($w: 40px, $h: 40px);
+
+    display: inline-block;
     border-radius: 50%;
     background-color: #f5f5f5;
     background-size: 16px;
@@ -41,12 +42,15 @@
       &_facebook {
         background-image: url("./images/facebook.svg");
       }
+
       &_twitter {
         background-image: url("./images/twitter.svg");
       }
+
       &_pinterest {
         background-image: url("./images/pinterest.svg");
       }
+
       &_copy {
         background-image: url("./images/copy-link.svg");
       }
