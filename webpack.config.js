@@ -36,12 +36,31 @@ module.exports = {
         },
       },
       {
-        test: /\.(css|scss)$/i,
+        test: /\.(css)$/i,
         use: [MiniCssExtractPlugin.loader, "css-loader", "postcss-loader"],
       },
       {
-        test: /\.(png|svg|jpg|gif|woff(2)?|eot|ttf|otf)$/,
+        test: /\.(scss)$/i,
+        use: [
+          MiniCssExtractPlugin.loader,
+          "css-loader",
+          "postcss-loader",
+          "sass-loader",
+        ],
+      },
+      {
+        test: /\.(png|svg|jpg|jpeg|gif)$/i,
         type: "asset/resource",
+        generator: {
+          filename: "assets/image/[contenthash][ext]",
+        },
+      },
+      {
+        test: /\.(woff(2)?|eot|ttf|otf)$/i,
+        type: "asset/resource",
+        generator: {
+          filename: "assets/fonts/[contenthash][ext]",
+        },
       },
       {
         test: /\.html$/i,
