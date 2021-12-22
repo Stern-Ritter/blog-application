@@ -1,6 +1,14 @@
 @use "sass:map";
 
 .subscription {
+  &__form {
+    @include flex($direction: row, $align: center);
+
+    @include tabletStyles {
+      @include flex($direction: column, $align: flex-start);
+    }
+  }
+
   &__input {
     min-width: 280px;
     padding: 16px 20px;

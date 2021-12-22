@@ -36,6 +36,9 @@
   &__field-set {
     padding: 0;
     margin: 0;
+    width: 50%;
+    min-width: 280px;
+    margin-right: 8px;
     border: none;
     position: relative;
   }
@@ -54,10 +57,8 @@
   }
 
   &__input {
-    width: 50%;
-    min-width: 280px;
+    width: 100%;
     padding: 1.5rem 0.6rem 1.5rem 4.25rem;
-    margin-right: 8px;
     background-color: #fff;
     border: none;
     outline: none;
