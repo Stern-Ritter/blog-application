@@ -9,4 +9,4 @@
 
 **Github-pages**
 
-- [Ссылка на github-pages.](https://stern-ritter.github.io/blog-application/)
+- [Ссылка на github-pages.](https://stern-ritter.github.io/blog-application/main.html)
