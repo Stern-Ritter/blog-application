@@ -7,9 +7,9 @@ const { NODE_ENV } = process.env;
 
 module.exports = {
   entry: {
-    main: resolve(__dirname, "src/js/main.js"),
-    post: resolve(__dirname, "src/js/post.js"),
-    posts: resolve(__dirname, "src/js/posts.js"),
+    main: resolve(__dirname, "src/main.js"),
+    post: resolve(__dirname, "src/post.js"),
+    posts: resolve(__dirname, "src/posts.js"),
   },
   output: {
     path: resolve(`${__dirname}/dist`),
@@ -39,6 +39,17 @@ module.exports = {
         },
       },
       {
+        test: /\.html$/i,
+        loader: "html-loader",
+      },
+      {
+        test: /\.handlebars$/,
+        loader: "handlebars-loader",
+        options: {
+          inlineRequires: /images/,
+        },
+      },
+      {
         test: /\.(css)$/i,
         use: [MiniCssExtractPlugin.loader, "css-loader", "postcss-loader"],
       },
@@ -64,14 +75,6 @@ module.exports = {
         generator: {
           filename: "assets/fonts/[contenthash][ext]",
         },
-      },
-      {
-        test: /\.html$/i,
-        loader: "html-loader",
-      },
-      {
-        test: /\.handlebars$/,
-        use: "handlebars-loader",
       },
     ],
   },

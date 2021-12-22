@@ -24,7 +24,7 @@
       background-size: contain;
       background-position: right center;
       background-repeat: no-repeat;
-      background-image: url("./images/arrow-btn.svg");
+      background-image: url("../../images/arrow-btn.svg");
     }
 
     &_learn-more:hover {
@@ -32,7 +32,7 @@
     }
 
     &_learn-more:hover::after {
-      background-image: url("./images/arrow-btn-hover.svg");
+      background-image: url("../../images/arrow-btn-hover.svg");
     }
   }
 }

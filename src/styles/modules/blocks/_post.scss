@@ -57,11 +57,11 @@
   }
 
   &__likes-count::before {
-    background-image: url("./images/like-icon.svg");
+    background-image: url("../../images/like-icon.svg");
   }
 
   &__comments-count::before {
-    background-image: url("./images/comment-icon.svg");
+    background-image: url("../../images/comment-icon.svg");
   }
 
   &__main-content {
@@ -167,7 +167,7 @@
     content: "";
     top: calc(50% - 0.5rem);
     left: 30%;
-    background-image: url("./images/like-icon-white.svg");
+    background-image: url("../../images/like-icon-white.svg");
     background-size: contain;
     background-position: right center;
     background-repeat: no-repeat;
