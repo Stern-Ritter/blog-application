@@ -38,6 +38,7 @@
     "eslint-config-prettier": "^8.3.0",
     "eslint-plugin-import": "^2.25.3",
     "eslint-plugin-jest": "^25.2.4",
+    "handlebars-loader": "^1.7.1",
     "handlebars-webpack-plugin": "^2.2.1",
     "html-loader": "^3.0.1",
     "html-webpack-plugin": "^5.5.0",

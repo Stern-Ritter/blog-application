@@ -1,9 +1,8 @@
 <!DOCTYPE html>
 <html lang="en">
-extends head.pug
-
+  {{> components/head}}
   <body class="page">
-  extends header.pug
+    {{> components/header}}
     <main class="content">
       <section class="search-post">
         <div class="search">
@@ -65,6 +64,6 @@ extends head.pug
         </ul>
       </section>
     </main>
-    extends footer.pug
+    {{> components/footer}}
   </body>
 </html>

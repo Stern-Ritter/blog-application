@@ -1,15 +1,17 @@
 const { resolve } = require("path");
-// const HtmlWebpackPlugin = require("html-webpack-plugin");
+const HtmlWebpackPlugin = require("html-webpack-plugin");
 const MiniCssExtractPlugin = require("mini-css-extract-plugin");
 const CssMinimizerPlugin = require("css-minimizer-webpack-plugin");
-const HandlebarsWebpackPlugin = require("handlebars-webpack-plugin");
 
 const { NODE_ENV } = process.env;
 
 module.exports = {
-  entry: resolve(__dirname, "src/index.js"),
+  entry: {
+    main: resolve(__dirname, "src/js/main.js"),
+    post: resolve(__dirname, "src/js/post.js"),
+    posts: resolve(__dirname, "src/js/posts.js"),
+  },
   output: {
-    filename: "bundle.js",
     path: resolve(`${__dirname}/dist`),
     clean: true,
     environment: {
@@ -67,6 +69,10 @@ module.exports = {
         test: /\.html$/i,
         loader: "html-loader",
       },
+      {
+        test: /\.handlebars$/,
+        use: "handlebars-loader",
+      },
     ],
   },
   mode: NODE_ENV === "production" ? "production" : "development",
@@ -74,13 +80,20 @@ module.exports = {
     minimizer: [`...`, new CssMinimizerPlugin()],
   },
   plugins: [
-    new HandlebarsWebpackPlugin({
-      htmlWebpackPlugin: {
-        enabled: true,
-      },
-      entry: resolve(process.cwd(), "src", "hbs", "*.hbs"),
-      output: resolve(process.cwd(), "dist", "[name].html"),
-      partials: [resolve(process.cwd(), "src", "hbs", "*", "*.hbs")],
+    new HtmlWebpackPlugin({
+      template: resolve(__dirname, "./src/hbs/main.handlebars"),
+      filename: "main.html",
+      chunks: ["main"],
+    }),
+    new HtmlWebpackPlugin({
+      template: resolve(__dirname, "./src/hbs/posts.handlebars"),
+      filename: "posts.html",
+      chunks: ["posts"],
+    }),
+    new HtmlWebpackPlugin({
+      template: resolve(__dirname, "./src/hbs/post.handlebars"),
+      filename: "post.html",
+      chunks: ["post"],
     }),
     new MiniCssExtractPlugin(),
   ],

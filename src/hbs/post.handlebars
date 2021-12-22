@@ -1,9 +1,8 @@
 <!DOCTYPE html>
 <html lang="en">
-extends head.pug
-
+  {{> components/head}}
   <body class="page">
-  extends header.pug
+    {{> components/header}}
     <main class="content">
       <section class="post-details">
         <article class="post-preview post-preview_place_post-details">
@@ -309,6 +308,6 @@ extends head.pug
         </article>
       </section>
     </main>
-    extends footer.pug
+    {{> components/footer}}
   </body>
 </html>
