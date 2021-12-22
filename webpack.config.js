@@ -1,7 +1,8 @@
 const { resolve } = require("path");
-const HtmlWebpackPlugin = require("html-webpack-plugin");
+// const HtmlWebpackPlugin = require("html-webpack-plugin");
 const MiniCssExtractPlugin = require("mini-css-extract-plugin");
 const CssMinimizerPlugin = require("css-minimizer-webpack-plugin");
+const HandlebarsWebpackPlugin = require("handlebars-webpack-plugin");
 
 const { NODE_ENV } = process.env;
 
@@ -73,8 +74,13 @@ module.exports = {
     minimizer: [`...`, new CssMinimizerPlugin()],
   },
   plugins: [
-    new HtmlWebpackPlugin({
-      template: resolve(__dirname, "./src/index.html"),
+    new HandlebarsWebpackPlugin({
+      htmlWebpackPlugin: {
+        enabled: true,
+      },
+      entry: resolve(process.cwd(), "src", "hbs", "*.hbs"),
+      output: resolve(process.cwd(), "dist", "[name].html"),
+      partials: [resolve(process.cwd(), "src", "hbs", "*", "*.hbs")],
     }),
     new MiniCssExtractPlugin(),
   ],
