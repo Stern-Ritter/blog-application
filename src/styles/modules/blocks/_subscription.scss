@@ -1,0 +1,34 @@
+@use "sass:map";
+
+.subscription {
+  &__form {
+    @include flex($direction: row, $align: center);
+
+    @include tabletStyles {
+      @include flex($direction: column, $align: flex-start);
+    }
+  }
+
+  &__input {
+    min-width: 280px;
+    padding: 16px 20px;
+    margin-right: 8px;
+    background-color: rgba(255, 255, 255, 6%);
+    border: none;
+    outline: none;
+    font-style: normal;
+    font-weight: map.get($font-weights, "regular");
+    font-size: 1rem;
+    line-height: 1.25;
+    color: rgba(255, 255, 255, 60%);
+
+    @include tabletStyles {
+      margin-bottom: 16px;
+    }
+  }
+
+  &__accept-btn {
+    min-width: 120px;
+    padding: 13px 22px;
+  }
+}

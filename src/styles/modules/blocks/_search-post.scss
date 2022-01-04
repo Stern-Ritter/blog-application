@@ -1,0 +1,33 @@
+.search-post {
+  &__list {
+    padding: 100px 5px;
+    display: grid;
+    justify-content: center;
+    grid-template-columns: repeat(auto-fit, minmax(min-content, 648px));
+    gap: 24px;
+
+    @include tabletStyles {
+      padding-top: 60px;
+      padding-bottom: 60px;
+    }
+  }
+
+  &__list-item {
+    min-height: 688px;
+
+    @include tabletStyles {
+      min-height: 456px;
+    }
+  }
+
+  &__image {
+    @include wh($w: 100%, $h: 508px);
+
+    object-fit: cover;
+    object-position: center;
+
+    @include tabletStyles {
+      height: 296px;
+    }
+  }
+}

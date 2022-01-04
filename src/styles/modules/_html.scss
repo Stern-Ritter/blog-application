@@ -1,0 +1,5 @@
+html {
+  @include tabletStyles {
+    font-size: 12px;
+  }
+}

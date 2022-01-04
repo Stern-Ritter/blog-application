@@ -1,0 +1,25 @@
+@use "sass:map";
+
+.comments {
+  &__title {
+    margin: 0 0 8px;
+    font-style: normal;
+    font-weight: map.get($font-weights, "bold");
+    font-size: 2rem;
+    line-height: 1;
+    color: #272343;
+  }
+
+  &__count {
+    font-weight: map.get($font-weights, "regular");
+    color: #6d7280;
+  }
+
+  &__list-item {
+    border-bottom: 1px solid #6d7280;
+  }
+
+  &__list-item:last-of-type {
+    border: none;
+  }
+}

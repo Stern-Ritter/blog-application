@@ -1,0 +1,39 @@
+@use "sass:map";
+
+.button {
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
+  position: relative;
+
+  &_type {
+    &_accept {
+      background-color: #fb743e;
+      font-style: normal;
+      font-weight: map.get($font-weights, "medium");
+      font-size: 1rem;
+      line-height: 1.25;
+      color: #fff;
+      overflow: hidden;
+      z-index: 1;
+    }
+
+    &_accept::before {
+      @include wh($w: 100%, $h: 100%);
+
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 0;
+      background-image: linear-gradient(#ff4500, #ff4500);
+      background-repeat: no-repeat;
+      background-size: 0% 100%;
+      transition: background-size 0.5s linear;
+      z-index: -1;
+    }
+
+    &_accept:hover::before {
+      background-size: 100% 100%;
+    }
+  }
+}

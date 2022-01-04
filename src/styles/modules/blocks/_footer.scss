@@ -1,0 +1,100 @@
+@use "sass:map";
+
+.footer {
+  padding-top: 100px;
+  padding-bottom: 20px;
+  background-color: #272343;
+
+  @include tabletStyles {
+    padding-top: 40px;
+    padding-bottom: 40px;
+  }
+
+  &__logo {
+    margin-bottom: 16px;
+    color: #fff;
+    font-size: 2.5rem;
+    line-height: 1.31;
+  }
+
+  &__paragraph {
+    padding: 0;
+    margin: 0;
+    font-style: normal;
+    font-weight: map.get($font-weights, "regular");
+    font-size: 1rem;
+    line-height: 1.5;
+    color: rgba(255, 255, 255, 60%);
+  }
+
+  &__link {
+    font-style: normal;
+    font-weight: map.get($font-weights, "regular");
+    font-size: 1rem;
+    line-height: 1.5;
+    color: rgba(255, 255, 255, 60%);
+  }
+
+  &__column {
+    margin-right: 16px;
+    margin-bottom: 32px;
+
+    &_content {
+      &_logo {
+        max-width: 200px;
+      }
+    }
+  }
+
+  &__column:last-of-type {
+    margin-right: 0;
+  }
+
+  &__row {
+    @include flex($direction: row, $justify: space-between);
+
+    margin: 0;
+    flex-wrap: wrap;
+
+    &_content {
+      &_main-info {
+        padding-bottom: 70px;
+
+        @include tabletStyles {
+          padding-bottom: 30px;
+        }
+      }
+
+      &_copyright {
+        padding-top: 20px;
+        border-top: 1px solid rgba(255, 255, 255, 20%);
+        font-style: normal;
+        font-weight: map.get($font-weights, "regular");
+        font-size: 1rem;
+        line-height: 1.5;
+        color: rgba(255, 255, 255, 60%);
+      }
+    }
+  }
+
+  &__column-title {
+    margin: 0 0 24px;
+    font-style: normal;
+    font-weight: map.get($font-weights, "regular");
+    font-size: 1.5rem;
+    line-height: 1.33;
+    color: #fff;
+  }
+
+  &__column-links {
+    @include flex($direction: column);
+  }
+
+  &__column-link {
+    margin-bottom: 10px;
+  }
+
+  &__column-link:last-of-type {
+    margin-bottom: 0;
+  }
+}

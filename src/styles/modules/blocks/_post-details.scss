@@ -1,0 +1,80 @@
+@use "sass:map";
+
+.post-details {
+  @include flex($direction: column, $align: center);
+
+  &__form-headline {
+    padding-top: 100px;
+    margin: 0;
+    font-style: normal;
+    font-weight: map.get($font-weights, "bold");
+    font-size: 2rem;
+    line-height: 1;
+    color: #272343;
+
+    @include tabletStyles {
+      padding-top: 60px;
+    }
+  }
+
+  &__form {
+    padding-top: 24px;
+    padding-bottom: 70px;
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas:
+      "name email"
+      "text text"
+      ". button";
+    gap: 24px;
+
+    @include tabletStyles {
+      grid-template-areas:
+        "name"
+        "email"
+        "text"
+        "button";
+      grid-template-columns: 1fr;
+      gap: 16px;
+    }
+  }
+
+  &__input {
+    padding: 18px 26px;
+    background-color: #f5f5f5;
+    border: none;
+    outline: none;
+    font-family: inherit;
+    font-style: normal;
+    font-weight: map.get($font-weights, "regular");
+    font-size: 1rem;
+    line-height: 1.25;
+    color: #6d7280;
+
+    &_type {
+      &_name {
+        grid-area: name;
+      }
+
+      &_email {
+        grid-area: email;
+      }
+
+      &_text {
+        grid-area: text;
+      }
+    }
+  }
+
+  &__accept-btn {
+    grid-area: button;
+    justify-self: end;
+    min-width: 189px;
+    padding: 12px 29px;
+
+    @include tabletStyles {
+      justify-self: center;
+    }
+  }
+}

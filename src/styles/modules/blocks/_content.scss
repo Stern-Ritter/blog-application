@@ -1,0 +1,42 @@
+@use "sass:map";
+
+.content {
+  &__section {
+    padding-top: 100px;
+    padding-bottom: 100px;
+
+    @include tabletStyles {
+      padding-top: 60px;
+      padding-bottom: 60px;
+    }
+  }
+
+  &__section-headline {
+    padding: 0 0 50px;
+    margin: 0;
+    font-style: normal;
+    font-weight: map.get($font-weights, "bold");
+    font-size: 2.5rem;
+    line-height: 1.33;
+    color: #272343;
+    position: relative;
+
+    @include tabletStyles {
+      padding-bottom: 40px;
+    }
+  }
+
+  &__section-headline::after {
+    @include wh($w: 112px, $h: 4px);
+
+    position: absolute;
+    content: "";
+    bottom: 30px;
+    left: 0;
+    background-color: #fb743e;
+
+    @include tabletStyles {
+      @include wh($w: 76px, $h: 3px);
+    }
+  }
+}

@@ -1,29 +1,30 @@
 {
-  "name": "weather-report",
+  "name": "blog-application",
   "version": "1.0.0",
-  "description": "Weather report",
+  "description": "Blog application",
   "main": "index.js",
   "scripts": {
     "test": "jest",
     "build": "webpack build --node-env production",
     "dev": "webpack serve --open",
-    "lint": "eslint .",
-    "lint:fix": "eslint . --fix",
+    "lint": "eslint . && stylelint \"**/*.scss\"",
+    "lint:fix": "eslint . --fix && stylelint \"**/*.scss\" --fix",
     "prepare": "husky install"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/Stern-Ritter/Weather-project.git"
+    "url": "git+https://github.com/Stern-Ritter/blog-application.git"
   },
   "author": "Konstantin Fadeev",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/Stern-Ritter/Weather-project/issues"
+    "url": "https://github.com/Stern-Ritter/blog-application/issues"
   },
-  "homepage": "https://github.com/Stern-Ritter/Weather-project#readme",
+  "homepage": "https://github.com/Stern-Ritter/blog-applicationt#readme",
   "devDependencies": {
     "@babel/cli": "^7.16.0",
     "@babel/core": "^7.16.0",
+    "@babel/plugin-transform-runtime": "^7.16.5",
     "@babel/preset-env": "^7.16.4",
     "@types/jest": "^27.0.2",
     "babel-jest": "^27.3.1",
@@ -31,25 +32,41 @@
     "babel-plugin-transform-runtime": "^6.23.0",
     "css-loader": "^6.5.1",
     "css-minimizer-webpack-plugin": "^3.1.4",
+    "cssnano": "^5.0.14",
     "eslint": "^8.2.0",
     "eslint-config-airbnb-base": "^15.0.0",
     "eslint-config-prettier": "^8.3.0",
     "eslint-plugin-import": "^2.25.3",
     "eslint-plugin-jest": "^25.2.4",
+    "handlebars-loader": "^1.7.1",
+    "handlebars-template-loader": "^1.0.0",
+    "handlebars-webpack-plugin": "^2.2.1",
     "html-loader": "^3.0.1",
     "html-webpack-plugin": "^5.5.0",
+    "html-webpack-pug-plugin": "^4.0.0",
     "husky": "^7.0.4",
     "jest": "^27.3.1",
     "lint-staged": "^12.0.2",
     "mini-css-extract-plugin": "^2.4.5",
+    "postcss-import": "^14.0.2",
+    "postcss-loader": "^6.2.1",
+    "postcss-preset-env": "^7.0.2",
     "prettier": "^2.4.1",
+    "pug-html-loader": "^1.1.5",
+    "resolve-url-loader": "^4.0.0",
+    "sass": "^1.45.0",
+    "sass-loader": "^12.4.0",
     "style-loader": "^3.3.1",
+    "stylelint": "^14.2.0",
+    "stylelint-config-standard": "^24.0.0",
+    "stylelint-scss": "^4.1.0",
     "webpack": "^5.64.1",
     "webpack-cli": "^4.9.1",
     "webpack-dev-server": "^4.5.0"
   },
   "lint-staged": {
     "*.js": "eslint --cache --fix",
-    "*.{js,css,md,yml}": "prettier --write"
+    "*.{js,css,md,yml}": "prettier --write",
+    "*.scss": "stylelint --fix"
   }
 }

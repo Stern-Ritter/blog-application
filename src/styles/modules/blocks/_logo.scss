@@ -1,0 +1,11 @@
+@use "sass:map";
+
+.logo {
+  display: inline-block;
+  font-style: normal;
+  font-weight: map.get($font-weights, "bold");
+
+  &__color-accent {
+    color: #fb743e;
+  }
+}
