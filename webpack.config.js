@@ -20,6 +20,7 @@ module.exports = {
   },
   devServer: {
     compress: true,
+    static: "dist",
     port: 9000,
     client: {
       logging: "info",
