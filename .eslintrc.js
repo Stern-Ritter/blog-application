@@ -2,22 +2,29 @@ module.exports = {
   env: {
     browser: true,
     es2021: true,
-    "jest/globals": true
+    "jest/globals": true,
   },
-  extends: [
-    'airbnb-base',
-    'prettier',
-  ],
+  extends: ["airbnb-base", "prettier"],
   parserOptions: {
     ecmaVersion: 13,
-    sourceType: 'module',
+    sourceType: "module",
   },
   rules: {
     "import/prefer-default-export": "off",
-    "max-len": ["error", {
-      "code": 100,
-      "ignoreComments": true
-    }]
+    "max-len": [
+      "error",
+      {
+        code: 100,
+        ignoreComments: true,
+      },
+    ],
+    "no-underscore-dangle": [
+      "error",
+      {
+        allowAfterThis: true,
+      },
+    ],
+    "no-param-reassign": ["error", { props: false }],
   },
-  plugins: ["jest"]
+  plugins: ["jest"],
 };
