@@ -2,6 +2,7 @@
 
 ## Описание проекта
 
+![Jest coverage workflow](https://github.com/Stern-Ritter/Weather-project/actions/workflows/coverage.yml/badge.svg)
 ![Sanity check workflow](https://github.com/Stern-Ritter/blog-application/actions/workflows/sanity-check.yml/badge.svg)
 ![Deploy workflow](https://github.com/Stern-Ritter/blog-application/actions/workflows/deploy.yml/badge.svg)
 
