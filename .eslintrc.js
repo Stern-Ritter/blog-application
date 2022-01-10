@@ -18,12 +18,7 @@ module.exports = {
         ignoreComments: true,
       },
     ],
-    "no-underscore-dangle": [
-      "error",
-      {
-        allowAfterThis: true,
-      },
-    ],
+    "no-underscore-dangle": "off",
     "no-param-reassign": ["error", { props: false }],
   },
   plugins: ["jest"],

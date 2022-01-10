@@ -2,6 +2,8 @@
 
 .post-carousel {
   &__slider {
+    max-width: 100%;
+
     @include wh($w: 70vw, $h: 35vw);
 
     margin: 0 auto;

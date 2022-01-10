@@ -8,7 +8,7 @@ export default class Carousel {
   }
 
   _showSlide(index) {
-    this._slides[index].classList.add("slider__slide_current");
+    this._slides[index].classList.add(`${this._mainSelector}__slide_current`);
   }
 
   _initSlides() {
@@ -18,7 +18,9 @@ export default class Carousel {
   }
 
   _hideSlide(index) {
-    this._slides[index].classList.remove("slider__slide_current");
+    this._slides[index].classList.remove(
+      `${this._mainSelector}__slide_current`
+    );
   }
 
   _updateSlides() {
