@@ -4,6 +4,20 @@
   <body class="page">
     {{> components/header}}
     <main class="content">
+      <section class="post-carousel content__section page__section">
+        <h2 class="content__section-headline">Post Carousel</h2>
+        <div class="post-carousel__slider slider">
+          <ul class="post-carousel__list list slider__wrapper">
+            <li class="slider__slide"><img class="post-carousel__image" src="../images/Magadan.jpg" alt="Magadan"></li>
+            <li class="slider__slide"><img class="post-carousel__image" src="../images/Tambov.jpg" alt="Tambov"></li>
+            <li class="slider__slide"><img class="post-carousel__image" src="../images/Vladivostok.jpg" alt="Vladivostok"></li>
+            <li class="slider__slide"><img class="post-carousel__image" src="../images/Novosibirsk.jpg" alt="Novosibirsk"></li>
+          </ul>
+          <button class="slider__button slider__button_type_prev" type="button"></button>
+          <button class="slider__button slider__button_type_next" type="button"></button>
+        </div>
+      </section>
+
       <section class="recent-post content__section page__section">
         <h2 class="content__section-headline">Recent Post</h2>
         <ul class="recent-post__list list">

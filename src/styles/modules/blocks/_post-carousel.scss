@@ -1,0 +1,18 @@
+.post-carousel {
+  &__slider {
+    @include wh($w: 600px, $h: 300px);
+  }
+
+  &__list {
+    @include flex($direction: row);
+
+    height: 100%;
+  }
+
+  &__image {
+    @include wh($w: 100%, $h: 100%);
+
+    object-fit: cover;
+    object-position: center;
+  }
+}

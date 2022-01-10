@@ -1,5 +1,7 @@
-import "./styles/pages/index.scss";
+import "./carousel/carousel.scss";
 import Carousel from "./carousel/carousel";
+
+import "./styles/pages/index.scss";
 
 const carousel = new Carousel({
   mainSelector: "slider",
