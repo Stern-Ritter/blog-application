@@ -5,6 +5,6 @@ import "./styles/pages/index.scss";
 
 const carousel = new Carousel({
   mainSelector: "slider",
-  slidesCount: 2,
+  slidesCount: 1,
 });
 carousel.initialize();
