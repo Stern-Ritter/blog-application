@@ -12,7 +12,7 @@ module.exports = {
     posts: resolve(__dirname, "src/posts.js"),
   },
   output: {
-    path: resolve(`${__dirname}/dist`),
+    path: resolve(__dirname, "dist"),
     clean: true,
     environment: {
       arrowFunction: false,
