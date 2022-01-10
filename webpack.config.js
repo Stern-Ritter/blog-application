@@ -7,7 +7,7 @@ const { NODE_ENV } = process.env;
 
 module.exports = {
   entry: {
-    main: resolve(__dirname, "src/main.js"),
+    index: resolve(__dirname, "src/index.js"),
     post: resolve(__dirname, "src/post.js"),
     posts: resolve(__dirname, "src/posts.js"),
   },
@@ -84,9 +84,9 @@ module.exports = {
   },
   plugins: [
     new HtmlWebpackPlugin({
-      template: resolve(__dirname, "./src/hbs/main.handlebars"),
-      filename: "main.html",
-      chunks: ["main"],
+      template: resolve(__dirname, "./src/hbs/index.handlebars"),
+      filename: "index.html",
+      chunks: ["index"],
     }),
     new HtmlWebpackPlugin({
       template: resolve(__dirname, "./src/hbs/posts.handlebars"),
