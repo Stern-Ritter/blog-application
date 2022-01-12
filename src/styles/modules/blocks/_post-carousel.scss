@@ -1,0 +1,43 @@
+@use "sass:map";
+
+.post-carousel {
+  &__slider {
+    max-width: 100%;
+
+    @include wh($w: 70vw, $h: 35vw);
+
+    margin: 0 auto;
+
+    @include tabletStyles {
+      @include wh($w: 80vw, $h: 80vw);
+    }
+  }
+
+  &__list {
+    @include flex($direction: row);
+
+    height: 100%;
+  }
+
+  &__image {
+    @include wh($w: 100%, $h: 100%);
+
+    object-fit: cover;
+    object-position: center;
+  }
+
+  &__image-caption {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    padding: 10px;
+    margin: 0;
+    background-color: rgba(0, 0, 0, 40%);
+    font-style: normal;
+    font-weight: map.get($font-weights, "regular");
+    font-size: 1rem;
+    line-height: 1.5;
+    color: rgba(255, 255, 255, 80%);
+  }
+}
